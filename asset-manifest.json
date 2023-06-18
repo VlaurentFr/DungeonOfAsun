@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/DungeonOfAsun/static/css/main.64854d42.chunk.css",
-    "main.js": "/DungeonOfAsun/static/js/main.d92b99ff.chunk.js",
-    "main.js.map": "/DungeonOfAsun/static/js/main.d92b99ff.chunk.js.map",
+    "main.js": "/DungeonOfAsun/static/js/main.46078d5e.chunk.js",
+    "main.js.map": "/DungeonOfAsun/static/js/main.46078d5e.chunk.js.map",
     "runtime-main.js": "/DungeonOfAsun/static/js/runtime-main.b1af393b.js",
     "runtime-main.js.map": "/DungeonOfAsun/static/js/runtime-main.b1af393b.js.map",
     "static/css/2.ed1298f3.chunk.css": "/DungeonOfAsun/static/css/2.ed1298f3.chunk.css",
-    "static/js/2.80aed944.chunk.js": "/DungeonOfAsun/static/js/2.80aed944.chunk.js",
-    "static/js/2.80aed944.chunk.js.map": "/DungeonOfAsun/static/js/2.80aed944.chunk.js.map",
+    "static/js/2.e9d5d93c.chunk.js": "/DungeonOfAsun/static/js/2.e9d5d93c.chunk.js",
+    "static/js/2.e9d5d93c.chunk.js.map": "/DungeonOfAsun/static/js/2.e9d5d93c.chunk.js.map",
     "static/js/3.42737966.chunk.js": "/DungeonOfAsun/static/js/3.42737966.chunk.js",
     "static/js/3.42737966.chunk.js.map": "/DungeonOfAsun/static/js/3.42737966.chunk.js.map",
     "index.html": "/DungeonOfAsun/index.html",
     "static/css/2.ed1298f3.chunk.css.map": "/DungeonOfAsun/static/css/2.ed1298f3.chunk.css.map",
     "static/css/main.64854d42.chunk.css.map": "/DungeonOfAsun/static/css/main.64854d42.chunk.css.map",
-    "static/js/2.80aed944.chunk.js.LICENSE.txt": "/DungeonOfAsun/static/js/2.80aed944.chunk.js.LICENSE.txt",
+    "static/js/2.e9d5d93c.chunk.js.LICENSE.txt": "/DungeonOfAsun/static/js/2.e9d5d93c.chunk.js.LICENSE.txt",
     "static/media/styles.css": "/DungeonOfAsun/static/media/bg.d7774ec1.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b1af393b.js",
     "static/css/2.ed1298f3.chunk.css",
-    "static/js/2.80aed944.chunk.js",
+    "static/js/2.e9d5d93c.chunk.js",
     "static/css/main.64854d42.chunk.css",
-    "static/js/main.d92b99ff.chunk.js"
+    "static/js/main.46078d5e.chunk.js"
   ]
 }
