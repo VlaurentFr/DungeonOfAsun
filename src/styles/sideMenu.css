@@ -1,0 +1,71 @@
+.sideNav {
+    position: absolute;
+    width: 320px;
+    left: 48px;
+    top: 116px;
+    background: #303036;
+    box-shadow: 0px 8px 16px rgba(12, 12, 14, 0.4);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    gap: 8px;
+    max-height: 90vh;
+    overflow: auto;
+}
+.sideMenuHeader {
+    padding: 24px 0 16px 0;
+    border-bottom: solid 1px var(--secondaryColor);
+}
+.sideMenuHeader h3 {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 120%;
+}
+.sideNav h3 {
+    color: white;
+    overflow: visible;
+    padding: 0 24px;
+}
+.sideMenuContent {
+    padding: 12px;
+}
+
+.slot p{
+    font-style: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+    padding: 12px;
+    margin: auto;
+}
+.slot a{
+    text-decoration: none;
+}
+.slot.no-hover p:hover {
+    color: white;
+    background-color: transparent;
+    cursor: initial;
+}
+.slot p:hover, .slot .subslot p:hover{
+    color: var(--dark);
+    background-color: var(--secondaryColor);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.slot .selected {
+    color: var(--dark);
+    background-color: var(--secondaryColor);
+    border-radius: 6px;
+}
+.slot .subslot a{
+    color: white;
+    text-decoration: none;
+}
+.slot .subslot-container {
+    border-left: solid 1px grey;
+    margin: 12px;
+}

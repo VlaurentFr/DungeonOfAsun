@@ -1,0 +1,321 @@
+/* RESET OF CSS */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+.container {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
+:root {
+  --primaryColor: #DC5A41;
+  --primaryColorTint: #eb6145;
+  --primaryColorShade: #dc5b41bb;
+  --secondaryColor: #F6BE4F;
+  --secondaryColorTint: #565d6a;
+  --secondaryColorShade: #232a37;
+  --backgroundTint: #f3f0e9;
+  --backgroundShade: #c0bdb6;
+  --background: #F0ECE3;
+  --textColor: #000;
+  --textColorTint: #F0ECE3;
+  --textColorShade: #e86971;
+  --dark: #2C3545;
+}
+[data-theme="dark"] {
+    --primaryColor: #e86971;
+    --primaryColorTint: #ea787f;
+    --primaryColorShade: #ba545a;
+    --secondaryColor: #2C3545;
+    --secondaryColorTint: #565d6a;
+    --secondaryColorShade: #232a37;
+    --backgroundTint: #1a2029;
+    --backgroundShade: #302f2d;
+    --background: #12151c;
+    --textColor: #f3f0e9;
+    
+}
+#root {
+    height: 100vh;
+}
+.timeline:before {
+    color: #ddd
+}
+.entry .body p, .entry .body h4{
+    color: white;
+    transition: color 1s;
+}
+
+p, h1, h2, h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* ========================
+BUTTON
+======================== */
+.button-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primaryColor);
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    padding: 0 16px; 
+    text-shadow: none;
+    color: var(--textColorTint);
+}
+nav .button-primary {
+    margin: 0px 20px;
+}
+.button-primary:hover{
+    background-color: var(--primaryColorTint);
+    cursor: pointer;
+}
+.button-secondary:hover{
+    background-color: var(--secondaryColorTint);
+    transform: scale(1.05);
+    border-radius: 24px 4px;
+}
+.button-primary a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-shadow: none;
+    color: var(--textColorTint);
+    margin: 0;
+    padding: 0;
+}
+
+.button-secondary {
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondaryColor);
+    text-decoration: none;
+    height: 70px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px var(--secondaryColorShade);
+    color: var(--textColorTint);
+    margin: 20px;
+    text-shadow: none;
+    transition: border-radius 1s,;
+}
+.button-secondary a {
+    display: flex;
+    color: var(--backgroundTint);
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 20px;
+    text-shadow: none;
+}
+
+/* ========================
+CONTAINER
+======================== */
+html {
+    scroll-behavior: smooth;
+}
+body, html, main {
+    height: 100%;
+    margin: 0px;
+    overflow: hidden;
+    color: var(--textColorTint);
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+.flex {
+    flex:1;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.arround {
+    display: flex;
+    justify-content: space-around;
+}
+
+.evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1 {
+    font-family: 'Poppins';
+    font-size: 36px;
+}
+h2 {
+    font-family: 'Poppins';
+    font-size: 24px;
+}
+
+.flex-wrapper h1, .flex-wrapper span {
+    /* margin-left: 60px; */
+    margin-bottom: 30px;
+}
+
+p, a {
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+
+.padding {
+    padding: 5%;
+}
+.center {  
+    display: flex;
+    justify-content: center;
+}
+.flex-wrapper {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+
+.container {
+    display: flex;
+    margin: 80px 0px 0px 418px;
+    padding: 0 80px 80px 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex: 1;
+    height: 80%;
+    flex-direction: column;
+}
+
+.background {
+    position: absolute;
+    background-color: transparent;
+    background-image: url("../Assets/bg.png");
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    z-index: -1;
+    opacity: 0.6;
+    filter: blur(8px);
+}
+/* ========================
+Nav
+======================== */
+
+nav {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    line-height: 50px;
+    top:-1000px;
+    background: none;
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: 999;
+    align-items: center;
+    justify-content: flex-end;
+}
+nav a {
+    padding: 0 20px;
+    margin: 0 10px;
+    display: inline-block;
+    color: var(--textColorTint);
+    font-size: 14px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+nav div {
+    margin-left: 15px;
+    display: flex;
+    transition: background-color 1s;
+}
+nav div a:hover {
+    transition: all 1s,;
+    border-bottom: 2px solid var(--primaryColor);
+}
+
+.scrolled {
+    background-color: var(--dark);
+    top: 0px;
+    background: rgba(0, 0, 0, 0.01);
+    border-bottom: 1px solid #FFFFFF;
+    backdrop-filter: blur(50px);
+}
+
+#scroll-1 {
+    font-size: 24px;
+    margin-left: 25px;
+    font-family: Helvetica;
+    flex: 1;
+}
