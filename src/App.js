@@ -1,10 +1,8 @@
 import './App.css';
 import { Route, useLocation, Link } from 'react-router-dom';
-import { Client } from './Pages/Client';
 import './styles/styles.css'
 import './styles/timeline.css'
 import { Univers } from './Pages/Univers';
-import { Recruteur } from './Pages/Recruteur';
 import { useRef, useState } from 'react';
 import { Button } from './Components/button'
 
@@ -49,18 +47,14 @@ const App = (props) => {
     {/* ROUTER */}
     <div style={{height: '100%'}}>
       <Route path='/Home'>
-        <Client refProp1={section1} refProp2={section2} refProp3={section3} refProp4={section4} refProp5={section5}/>
       </Route>
       <Route path='/Univers' component={Univers} >
       </Route>
       <Route path='/Rules'>
-        <Recruteur refProp1={section1} refProp2={section2} refProp3={section3} refProp4={section4} refProp4a={section4a} refProp4b={section4b} refProp5={section5}/>
       </Route>
       <Route path='/Lib'>
-        <Recruteur refProp1={section1} refProp2={section2} refProp3={section3} refProp4={section4} refProp4a={section4a} refProp4b={section4b} refProp5={section5}/>
       </Route>
       <Route path='/Map'>
-        <Recruteur refProp1={section1} refProp2={section2} refProp3={section3} refProp4={section4} refProp4a={section4a} refProp4b={section4b} refProp5={section5}/>
       </Route>
     </div>
   </main>
