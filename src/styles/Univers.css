@@ -2,6 +2,11 @@
     display: flex;
     border-bottom: solid 1px var(--primaryColor);
     margin-bottom: 24px;
+    flex-direction: column;
+}
+.title-section span{
+    font-size: 20px;
+    margin: 8px 0 24px 0;
 }
 .title-section h3 {
     flex: 1;
@@ -14,6 +19,9 @@
 }
 .title-page {
     padding-top: 66px;
+}
+.title-section.no-margin h3 {
+    padding : 0 !important;
 }
 .title-page h1 {
     font-family: 'Caladea';
@@ -94,6 +102,12 @@ article p {
     max-height: 489px;
     /* white-space: nowrap; */
     overflow: hidden;
+    width: calc(296px + 120px);
+}
+
+.selected-item {
+    display: flex;
+    gap: 80px;
 }
 
 .selected-grid-item .content {
@@ -105,7 +119,7 @@ article p {
     -webkit-box-orient: vertical;
     margin-bottom: 24px;
 }
-.selected-grid-item img{
+.selected-grid-item img, .selected-item img{
     width: 296px;
     height: 296px;
     border: 1px solid #FBFAF8;
@@ -129,7 +143,87 @@ article p {
     left: calc(296px - 120px);
     width: 240px;
     height: 240px;
+    border: none;
+    filter: drop-shadow(2px 4px 6px white) invert(1);
+}
+#back {
+    width: fit-content;
+    margin-bottom: 16px;
+}
+#back .button-primary p{
+    margin: 6px auto;
 }
 .row.gods {
     column-gap: 80px;
 }
+.invisible {
+    display: none;
+}
+.visible {
+    animation: fadeIn 600ms;
+}
+
+.panth-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+}
+.panth-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 292px;
+    height: 160px;
+    border-radius: 16px;
+    border: 1px solid #FBFAF8;
+}
+.panth-card:hover {
+    cursor: pointer;
+}
+.panth-card img {
+    position: absolute;
+}
+.panth-card img
+.panth-card .dark-filter {
+    position: relative;
+    width: 100%;
+}
+.panth-card .dark-filter:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 160px;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(22, 22, 22, 0.6), rgba(22, 22, 22, 0.6));
+}
+.panth-card .corner {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 16px;
+    background-color: var(--primaryColor);
+}
+.panth-card p {
+    z-index: 2;
+    margin: 32px;
+    text-align: center;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    50% { opacity: 0.7;}
+    100% { opacity: 1; }
+  }
