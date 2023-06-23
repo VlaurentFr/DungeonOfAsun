@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/DungeonOfAsun/static/css/main.7a374035.chunk.css",
-    "main.js": "/DungeonOfAsun/static/js/main.4a24c843.chunk.js",
-    "main.js.map": "/DungeonOfAsun/static/js/main.4a24c843.chunk.js.map",
-    "runtime-main.js": "/DungeonOfAsun/static/js/runtime-main.c6d02094.js",
-    "runtime-main.js.map": "/DungeonOfAsun/static/js/runtime-main.c6d02094.js.map",
-    "static/js/2.a6affebf.chunk.js": "/DungeonOfAsun/static/js/2.a6affebf.chunk.js",
-    "static/js/2.a6affebf.chunk.js.map": "/DungeonOfAsun/static/js/2.a6affebf.chunk.js.map",
-    "static/js/3.1adf82e2.chunk.js": "/DungeonOfAsun/static/js/3.1adf82e2.chunk.js",
-    "static/js/3.1adf82e2.chunk.js.map": "/DungeonOfAsun/static/js/3.1adf82e2.chunk.js.map",
+    "main.css": "/DungeonOfAsun/static/css/main.b1ca1df7.chunk.css",
+    "main.js": "/DungeonOfAsun/static/js/main.6ffac4ff.chunk.js",
+    "main.js.map": "/DungeonOfAsun/static/js/main.6ffac4ff.chunk.js.map",
+    "runtime-main.js": "/DungeonOfAsun/static/js/runtime-main.33f20e45.js",
+    "runtime-main.js.map": "/DungeonOfAsun/static/js/runtime-main.33f20e45.js.map",
+    "static/js/2.c9542c1d.chunk.js": "/DungeonOfAsun/static/js/2.c9542c1d.chunk.js",
+    "static/js/2.c9542c1d.chunk.js.map": "/DungeonOfAsun/static/js/2.c9542c1d.chunk.js.map",
+    "static/js/3.fdd14272.chunk.js": "/DungeonOfAsun/static/js/3.fdd14272.chunk.js",
+    "static/js/3.fdd14272.chunk.js.map": "/DungeonOfAsun/static/js/3.fdd14272.chunk.js.map",
     "index.html": "/DungeonOfAsun/index.html",
-    "static/css/main.7a374035.chunk.css.map": "/DungeonOfAsun/static/css/main.7a374035.chunk.css.map",
-    "static/js/2.a6affebf.chunk.js.LICENSE.txt": "/DungeonOfAsun/static/js/2.a6affebf.chunk.js.LICENSE.txt",
+    "static/css/main.b1ca1df7.chunk.css.map": "/DungeonOfAsun/static/css/main.b1ca1df7.chunk.css.map",
+    "static/js/2.c9542c1d.chunk.js.LICENSE.txt": "/DungeonOfAsun/static/js/2.c9542c1d.chunk.js.LICENSE.txt",
     "static/media/styles.css": "/DungeonOfAsun/static/media/bg.d7774ec1.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.c6d02094.js",
-    "static/js/2.a6affebf.chunk.js",
-    "static/css/main.7a374035.chunk.css",
-    "static/js/main.4a24c843.chunk.js"
+    "static/js/runtime-main.33f20e45.js",
+    "static/js/2.c9542c1d.chunk.js",
+    "static/css/main.b1ca1df7.chunk.css",
+    "static/js/main.6ffac4ff.chunk.js"
   ]
 }
