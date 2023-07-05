@@ -3,6 +3,7 @@ import { Route, useLocation, Link } from 'react-router-dom';
 import './styles/styles.css'
 import './styles/timeline.css'
 import { Univers } from './Pages/Univers';
+import { Rules } from './Pages/Rules';
 import { useRef, useState } from 'react';
 import { Button } from './Components/button'
 
@@ -50,7 +51,7 @@ const App = (props) => {
       </Route>
       <Route path='/Univers' component={Univers} >
       </Route>
-      <Route path='/Rules'>
+      <Route path='/Rules' component={Rules}>
       </Route>
       <Route path='/Lib'>
       </Route>

@@ -1,13 +1,12 @@
 import '../styles/styles.css';
-import '../styles/Univers.css';
+import '../styles/Rules.css';
 import '../styles/sideMenu.css';
 import { useLocation, Link } from 'react-router-dom';
 import Timeline from '../Components/Univers/timeline';
 import Story from '../Components/Univers/story';
 import Cults from '../Components/Univers/Cults/Cults';
-import Orga from '../Components/Univers/orga';
 
-export const Univers = (props) => {
+export const Rules = (props) => {
 	return (
 		<div style={{ height: '100%' }}>
 			<side className='sideNav'>
@@ -16,23 +15,23 @@ export const Univers = (props) => {
 				</div>
 				<div className=' sideMenuContent'>
 					<div className='slot'>
-						<Link to='/Univers/overview'>
-							<p className={useLocation().pathname === '/Univers/overview' && 'selected'}>Vue d'ensemble</p>
+						<Link to='/Rules'>
+							<p className={useLocation().pathname === '/Rules' && 'selected'}>Vue d'ensemble</p>
 						</Link>
 					</div>
 					<div className='slot'>
-						<Link to='/Univers/story'>
-							<p className={useLocation().pathname === '/Univers/story' && 'selected'}>Histoire générale</p>
+						<Link to='/Rules/story'>
+							<p className={useLocation().pathname === '/Rules/story' && 'selected'}>Histoire générale</p>
 						</Link>
 					</div>
 					<div className='slot'>
-						<Link to='/Univers/keyEvent'>
-							<p className={useLocation().pathname === '/Univers/keyEvent' && 'selected'}>Evènements clés</p>
+						<Link to='/Rules/keyEvent'>
+							<p className={useLocation().pathname === '/Rules/keyEvent' && 'selected'}>Evènements clés</p>
 						</Link>
 					</div>
 					<div className='slot'>
-						<Link to='/Univers/cults'>
-							<p className={useLocation().pathname === '/Univers/cults' && 'selected'}>Mythologie</p>
+						<Link to='/Rules/cults'>
+							<p className={useLocation().pathname === '/Rules/cults' && 'selected'}>Mythologie</p>
 						</Link>
 					</div>
 					<div className={'slot no-hover'}>
@@ -50,9 +49,7 @@ export const Univers = (props) => {
 						</div>
 					</div>
 					<div className='slot'>
-						<Link to='/Univers/orga'>
-							<p className={useLocation().pathname === '/Univers/orga' && 'selected'}>Organisation</p>
-						</Link>
+						<p>Organisations</p>
 					</div>
 					<div className='slot'>
 						<p>Races</p>
@@ -64,7 +61,7 @@ export const Univers = (props) => {
 			</side>
 			<span className='background'></span>
 			{/* Timeline */}
-			{useLocation().pathname === '/Univers/keyEvent' && (
+			{useLocation().pathname === '/Rules/keyEvent' && (
 				<section
 					ref={props.refProp4a}
 					className='container'
@@ -82,7 +79,7 @@ export const Univers = (props) => {
 				</section>
 			)}
 			{/* Timeline */}
-			{useLocation().pathname === '/Univers/story' && (
+			{useLocation().pathname === '/Rules/story' && (
 				<section
 					ref={props.refProp4a}
 					className='container'
@@ -96,7 +93,7 @@ export const Univers = (props) => {
 					</div>
 				</section>
 			)}
-			{useLocation().pathname === '/Univers/cults' && (
+			{useLocation().pathname === '/Rules/cults' && (
 				<section
 					ref={props.refProp4a}
 					className='container'
@@ -107,20 +104,6 @@ export const Univers = (props) => {
 							<h2>Découvrez les dieux et néandre de l'univers</h2>
 						</div>
 						<Cults></Cults>
-					</div>
-				</section>
-			)}
-			{useLocation().pathname === '/Univers/orga' && (
-				<section
-					ref={props.refProp4a}
-					className='container'
-				>
-					<div>
-						<div className='title-page'>
-							<h1>Organisations</h1>
-							<h2>Découvrez les organisations de l'univers</h2>
-						</div>
-						<Orga></Orga>
 					</div>
 				</section>
 			)}

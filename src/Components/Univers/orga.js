@@ -1,28 +1,18 @@
 import { useState } from 'react';
-import Gods from './Gods';
-import { panth } from '../mock/panthsMock';
 import { IoMdPin } from 'react-icons/io';
-import { majorGods } from '../mock/godsMock';
-import { Button } from '../../button';
+import { Button } from '../button';
+import { orga } from './mock/orgaMock';
 const Cults = (props) => {
-	let [selected, setSelected] = useState({ type: 'Gods', ...majorGods[0] });
 	let [selectedCults, setSelectedCults] = useState(null);
 	return (
 		<div>
 			<div className={selectedCults ? 'invisible' : 'visible'}>
-				<Gods
-					selected={selected}
-					setSelected={(v) => setSelected(v)}
-				></Gods>
-				{selected.cults.length ? (
 					<div>
 						<div className='title-section'>
-							<h3>Panhtéon & Cultes</h3>
 						</div>
 						<div className='panth-container'>
-							{panth.map((v, index) => {
+							{orga.map((v, index) => {
 								return (
-									selected.cults?.includes(index) && (
 										<div
 											className='panth-card'
 											onClick={() => setSelectedCults(v)}
@@ -35,16 +25,12 @@ const Cults = (props) => {
 											>
 												<IoMdPin />
 											</div>
-											<p>{v.name}</p>
+											<p>{v.title}</p>
 										</div>
 									)
-								);
 							})}
 						</div>
 					</div>
-				) : (
-					<div></div>
-				)}
 			</div>
 			<div className={!selectedCults ? 'invisible' : 'visible'}>
 				<div
@@ -56,9 +42,15 @@ const Cults = (props) => {
 					</Button>
 				</div>
 				<div className='title-section'>
-					<h3>{selectedCults?.name}</h3>
+					<h3>{selectedCults?.title}</h3>
 				</div>
-				<p>{selectedCults?.desc}</p>
+				<p className='descOrga'>{selectedCults?.desc}</p>
+				<div className='title-section'>
+					<h3>Rangs</h3>
+				</div>
+				<ul>
+					{selectedCults?.rank.map((v) => <li>{v}</li>)}
+				</ul>
 			</div>
 		</div>
 	);
