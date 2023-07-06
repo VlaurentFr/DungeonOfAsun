@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/DungeonOfAsun/static/css/main.ef35adcb.chunk.css",
-    "main.js": "/DungeonOfAsun/static/js/main.dfb3fda0.chunk.js",
-    "main.js.map": "/DungeonOfAsun/static/js/main.dfb3fda0.chunk.js.map",
+    "main.js": "/DungeonOfAsun/static/js/main.49303e7f.chunk.js",
+    "main.js.map": "/DungeonOfAsun/static/js/main.49303e7f.chunk.js.map",
     "runtime-main.js": "/DungeonOfAsun/static/js/runtime-main.1a634c0e.js",
     "runtime-main.js.map": "/DungeonOfAsun/static/js/runtime-main.1a634c0e.js.map",
     "static/js/2.0e3bfc88.chunk.js": "/DungeonOfAsun/static/js/2.0e3bfc88.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.1a634c0e.js",
     "static/js/2.0e3bfc88.chunk.js",
     "static/css/main.ef35adcb.chunk.css",
-    "static/js/main.dfb3fda0.chunk.js"
+    "static/js/main.49303e7f.chunk.js"
   ]
 }
