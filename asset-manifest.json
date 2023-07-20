@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/DungeonOfAsun/static/css/main.e073a000.chunk.css",
-    "main.js": "/DungeonOfAsun/static/js/main.2bf7ad46.chunk.js",
-    "main.js.map": "/DungeonOfAsun/static/js/main.2bf7ad46.chunk.js.map",
+    "main.css": "/DungeonOfAsun/static/css/main.b01fbaa3.chunk.css",
+    "main.js": "/DungeonOfAsun/static/js/main.770a123d.chunk.js",
+    "main.js.map": "/DungeonOfAsun/static/js/main.770a123d.chunk.js.map",
     "runtime-main.js": "/DungeonOfAsun/static/js/runtime-main.1a634c0e.js",
     "runtime-main.js.map": "/DungeonOfAsun/static/js/runtime-main.1a634c0e.js.map",
     "static/js/2.f65ba23c.chunk.js": "/DungeonOfAsun/static/js/2.f65ba23c.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.311101ef.chunk.js": "/DungeonOfAsun/static/js/3.311101ef.chunk.js",
     "static/js/3.311101ef.chunk.js.map": "/DungeonOfAsun/static/js/3.311101ef.chunk.js.map",
     "index.html": "/DungeonOfAsun/index.html",
-    "static/css/main.e073a000.chunk.css.map": "/DungeonOfAsun/static/css/main.e073a000.chunk.css.map",
+    "static/css/main.b01fbaa3.chunk.css.map": "/DungeonOfAsun/static/css/main.b01fbaa3.chunk.css.map",
     "static/js/2.f65ba23c.chunk.js.LICENSE.txt": "/DungeonOfAsun/static/js/2.f65ba23c.chunk.js.LICENSE.txt",
     "static/media/styles.css": "/DungeonOfAsun/static/media/bg1.eab10067.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1a634c0e.js",
     "static/js/2.f65ba23c.chunk.js",
-    "static/css/main.e073a000.chunk.css",
-    "static/js/main.2bf7ad46.chunk.js"
+    "static/css/main.b01fbaa3.chunk.css",
+    "static/js/main.770a123d.chunk.js"
   ]
 }
