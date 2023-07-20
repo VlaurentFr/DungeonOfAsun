@@ -4,6 +4,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url('https://fonts.cdnfonts.com/css/work-sans');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -72,19 +73,10 @@ scrollbar-width: none;  /* Firefox */
   --textColorTint: #F0ECE3;
   --textColorShade: #e86971;
   --dark: #2C3545;
+  --bg: url("../Assets/bg.png");
 }
 [data-theme="dark"] {
-    --primaryColor: #e86971;
-    --primaryColorTint: #ea787f;
-    --primaryColorShade: #ba545a;
-    --secondaryColor: #2C3545;
-    --secondaryColorTint: #565d6a;
-    --secondaryColorShade: #232a37;
-    --backgroundTint: #1a2029;
-    --backgroundShade: #302f2d;
-    --background: #12151c;
-    --textColor: #f3f0e9;
-    
+    --bg: url("../Assets/bg1.png")
 }
 #root {
     height: 100vh;
@@ -204,11 +196,11 @@ body, html, main {
 }
 
 h1 {
-    font-family: 'Poppins';
+    font-family: 'Manrope';
     font-size: 36px;
 }
 h2 {
-    font-family: 'Poppins';
+    font-family: 'Manrope';
     font-size: 24px;
 }
 
@@ -218,7 +210,7 @@ h2 {
 }
 
 p, a {
-    font-family: 'Poppins';
+    font-family: 'Manrope';
     font-size: 18px;
 }
 
@@ -249,11 +241,16 @@ p, a {
     flex-direction: column;
     max-width: 900px;
 }
+.theme-switcher {
+    transition: all 300ms;
+    align-items: center;
+}
 
 .background {
+    transition: all 300ms;
     position: absolute;
     background-color: transparent;
-    background-image: url("../Assets/bg1.png");
+    background-image: var(--bg);
     width: 100%;
     height: 100%;
     left: 0;
@@ -286,8 +283,23 @@ nav {
     z-index: 999;
     align-items: center;
     justify-content: flex-end;
+    min-height: 54px;
+}
+#burger, #close {
+    display: none;
+}
+nav img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 8px;
+    right: -37px;
+}
+nav .desc {
+    overflow: visible;
 }
 nav a {
+    position: relative;
     padding: 0 20px;
     margin: 0 10px;
     display: inline-block;
@@ -295,6 +307,7 @@ nav a {
     font-size: 14px;
     text-decoration: none;
     border-bottom: 2px solid transparent;
+    overflow: visible;
 }
 nav div {
     margin-left: 15px;
@@ -319,4 +332,51 @@ nav div a:hover {
     margin-left: 25px;
     font-family: Helvetica;
     flex: 1;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        margin: 80px 0px 0px 80px;
+        height: 50%;
+    }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #burger {
+        display: flex;
+        position: absolute;
+        top: 36px;
+        right: 48px;
+    }
+    #close {
+        display: flex;
+        position: absolute;
+        top: 24px;
+        right: 48px;
+    }
+    .theme-switcher {
+        position: absolute;
+        top: 24px;
+        right: 84px;
+    }
+    nav a {
+        padding: 0 20px;
+        margin: 0 10px;
+        display: inline-block;
+        color: var(--textColorTint);
+        font-size: 14px;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+    }
+    nav div {
+        margin-left: 15px;
+        display: flex;
+        transition: background-color 1s;
+        flex-direction: column;
+    }
+    nav div a:hover {
+        transition: all 1s,;
+        border-bottom: 2px solid var(--primaryColor);
+    }
 }

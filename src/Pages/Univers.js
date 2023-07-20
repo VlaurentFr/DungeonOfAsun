@@ -6,6 +6,7 @@ import Timeline from '../Components/Univers/timeline';
 import Story from '../Components/Univers/story';
 import Cults from '../Components/Univers/Cults/Cults';
 import Orga from '../Components/Univers/orga';
+import Faction from '../Components/Univers/faction';
 
 export const Univers = (props) => {
 	return (
@@ -15,11 +16,11 @@ export const Univers = (props) => {
 					<h3>Menu</h3>
 				</div>
 				<div className=' sideMenuContent'>
-					<div className='slot'>
+					{/* <div className='slot'>
 						<Link to='/Univers/overview'>
 							<p className={useLocation().pathname === '/Univers/overview' && 'selected'}>Vue d'ensemble</p>
 						</Link>
-					</div>
+					</div> */}
 					<div className='slot'>
 						<Link to='/Univers/story'>
 							<p className={useLocation().pathname === '/Univers/story' && 'selected'}>Histoire générale</p>
@@ -45,13 +46,15 @@ export const Univers = (props) => {
 								<p>Régions</p>
 							</div>
 							<div className='subslot'>
-								<p>Factions</p>
+								<Link to='/Univers/faction'>
+									<p className={useLocation().pathname === '/Univers/faction' && 'selected'}>Factions</p>
+								</Link>
 							</div>
 						</div>
 					</div>
 					<div className='slot'>
 						<Link to='/Univers/orga'>
-							<p className={useLocation().pathname === '/Univers/orga' && 'selected'}>Organisation</p>
+							<p className={useLocation().pathname === '/Univers/orga' && 'selected'}>Organisations</p>
 						</Link>
 					</div>
 					<div className='slot'>
@@ -121,6 +124,20 @@ export const Univers = (props) => {
 							<h2>Découvrez les organisations de l'univers</h2>
 						</div>
 						<Orga></Orga>
+					</div>
+				</section>
+			)}
+			{useLocation().pathname === '/Univers/faction' && (
+				<section
+					ref={props.refProp4a}
+					className='container'
+				>
+					<div>
+						<div className='title-page'>
+							<h1>Factions</h1>
+							<h2>Découvrez les factions de l'univers</h2>
+						</div>
+						<Faction></Faction>
 					</div>
 				</section>
 			)}

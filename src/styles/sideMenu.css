@@ -69,3 +69,13 @@
     border-left: solid 1px grey;
     margin: 12px;
 }
+
+@media screen and (max-width: 768px) {
+    .sideNav {
+        position: relative; 
+        width: auto;
+        height: 217px;
+        left: 0px;
+        top: 62px;
+    }
+}

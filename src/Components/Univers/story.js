@@ -17,7 +17,7 @@ const story = (props) => {
           La domination des hommes était en marche sous la bannière d'Edes "Le Justicier".
         </p>
         <div className="image column">
-          <img src="/DungeonOfAsun/Assets/genese.png"></img>
+          <img src="/DungeonOfAsun/Assets/gods/Riannedos.png"></img>
           <span>illustration de la genèse</span>
         </div>
       </div>
@@ -37,7 +37,7 @@ const story = (props) => {
           On verra d'ailleurs un 4eme royaume apparaître vers la fin de cette ère, la Dynastie Owrilia qui issue du pacifisme de Trésabia et de l'aide des dragons découvriront bien d'autres lieux sur cette planète notamment le "Nouveau Monde".
         </p>
         <div className="image column">
-          <img src="/DungeonOfAsun/Assets/human.png"></img>
+          <img src="/DungeonOfAsun/Assets/genese.png"></img>
           <span>illustration d'hommes</span>
         </div>
       </div>
@@ -53,7 +53,7 @@ const story = (props) => {
           Si certains n'était pas chaleureux envers les hommes ce n'était pas le cas de tous car ils savaient que les gens de ce monde pouvais aider a détruire l'oeuvre d'Edes, son Royaume, le Saint Royaume de Lorus...<br/><br/>
         </p>
         <div className="image column">
-          <img src="/DungeonOfAsun/Assets/cults/major.png"></img>
+          <img src="/DungeonOfAsun/Assets/human.png"></img>
           <span>illustration du nouveau monde'</span>
         </div>
       </div>

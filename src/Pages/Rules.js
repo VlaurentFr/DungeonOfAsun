@@ -2,9 +2,9 @@ import '../styles/styles.css';
 import '../styles/Rules.css';
 import '../styles/sideMenu.css';
 import { useLocation, Link } from 'react-router-dom';
-import Timeline from '../Components/Univers/timeline';
-import Story from '../Components/Univers/story';
-import Cults from '../Components/Univers/Cults/Cults';
+import Orga from "../Components/Univers/orga"
+import Fight from '../Components/Rules/Fight';
+import Weapon from '../Components/Rules/Weapon';
 
 export const Rules = (props) => {
 	return (
@@ -20,93 +20,85 @@ export const Rules = (props) => {
 						</Link>
 					</div>
 					<div className='slot'>
-						<Link to='/Rules/story'>
-							<p className={useLocation().pathname === '/Rules/story' && 'selected'}>Histoire générale</p>
+						<Link to='/Rules/fight'>
+							<p className={useLocation().pathname === '/Rules/fight' && 'selected'}>Combat</p>
 						</Link>
 					</div>
 					<div className='slot'>
-						<Link to='/Rules/keyEvent'>
-							<p className={useLocation().pathname === '/Rules/keyEvent' && 'selected'}>Evènements clés</p>
+						<Link to='/Rules/creation'>
+							<p className={useLocation().pathname === '/Rules/creation' && 'selected'}>Création de personnage</p>
 						</Link>
 					</div>
 					<div className='slot'>
-						<Link to='/Rules/cults'>
-							<p className={useLocation().pathname === '/Rules/cults' && 'selected'}>Mythologie</p>
+						<Link to='/Rules/class'>
+							<p className={useLocation().pathname === '/Rules/class' && 'selected'}>Classes</p>
 						</Link>
 					</div>
-					<div className={'slot no-hover'}>
-						<p>Géographie</p>
-						<div className='subslot-container'>
-							<div className='subslot'>
-								<p>Lieux important</p>
-							</div>
-							<div className='subslot'>
-								<p>Régions</p>
-							</div>
-							<div className='subslot'>
-								<p>Factions</p>
-							</div>
-						</div>
+					<div className='slot'>
+						<Link to='/Rules/weapon'>
+							<p className={useLocation().pathname === '/Rules/weapon' && 'selected'}>Maîtrise d'armes</p>
+						</Link>
 					</div>
 					<div className='slot'>
-						<p>Organisations</p>
+						<Link to='/Rules/orga'>
+							<p className={useLocation().pathname === '/Rules/orga' && 'selected'}>Organisations</p>
+						</Link>
 					</div>
 					<div className='slot'>
 						<p>Races</p>
 					</div>
-					<div className='slot'>
-						<p>Magie</p>
-					</div>
 				</div>
 			</side>
-			<span className='background'></span>
-			{/* Timeline */}
-			{useLocation().pathname === '/Rules/keyEvent' && (
+			{useLocation().pathname === '/Rules/fight' && (
 				<section
 					ref={props.refProp4a}
 					className='container'
 				>
 					<div>
 						<div className='title-page'>
-							<h1>Evenement clés</h1>
-							<h2>Découvrez les dates importantes d’Asun</h2>
+							<h1>Combats</h1>
+							<h2>Découvrez comment ce déroule les combats</h2>
+						</div>
+						<Fight></Fight>
+					</div>
+				</section>
+			)}
+			{useLocation().pathname === '/Rules/weapon' && (
+				<section
+					ref={props.refProp4a}
+					className='container'
+				>
+					<div>
+						<div className='title-page'>
+							<h1>Maîtrise d'armes</h1>
+							<h2>Découvrez comment fonctionne les maîtrises d'armes</h2>
+						</div>
+						<Weapon></Weapon>
+					</div>
+				</section>
+			)}
+			<span className='background'></span>
+			{useLocation().pathname === '/Rules/orga' && (
+				<section
+					ref={props.refProp4a}
+					className='container'
+				>
+					<div>
+						<div className='title-page'>
+							<h1>Organisations</h1>
+							<h2>Découvrez les organisations de l'univers</h2>
 						</div>
 						<div className='title-section'>
-							<h3>Chronologie</h3>
+							<h3>Comment jouer ?</h3>
 						</div>
-						<Timeline></Timeline>
+						<div className='descOrga'>
+							<p>Lorsque vous créer voter personnages ou au cours de vos aventures il vous sera possible de rejoindre une des organisations d'Asun. On en dénombre 7 grandes organisation : Les cercles d'Emeraude, de Rubis et de Saphir, Le Xaral, L'ordre du gantelet, l'Unenmir et la Lance noire<br/><br/> Chacune de ces organisation possèdent plusieurs rangs et chaque rangs possèdent des avantages qui seront décider par votre MJ dans des contexte donner. C'est également le MJ qui décide si le joueur correspond au critères pour demander un nouveau rangs. Il vous sera par ailleurs possible de rejoindre une ou plusieurs de ces organisation a la fois !</p>
+						</div>
+						<Orga title="true"></Orga>
 					</div>
 				</section>
 			)}
-			{/* Timeline */}
-			{useLocation().pathname === '/Rules/story' && (
-				<section
-					ref={props.refProp4a}
-					className='container'
-				>
-					<div>
-						<div className='title-page'>
-							<h1>Histoire générale</h1>
-							<h2>Découvrez l'histoire d’Asun</h2>
-						</div>
-						<Story></Story>
-					</div>
-				</section>
-			)}
-			{useLocation().pathname === '/Rules/cults' && (
-				<section
-					ref={props.refProp4a}
-					className='container'
-				>
-					<div>
-						<div className='title-page'>
-							<h1>Mythologie</h1>
-							<h2>Découvrez les dieux et néandre de l'univers</h2>
-						</div>
-						<Cults></Cults>
-					</div>
-				</section>
-			)}
+			
 		</div>
 	);
 };

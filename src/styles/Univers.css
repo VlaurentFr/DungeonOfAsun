@@ -149,6 +149,7 @@ article p {
 #back {
     width: fit-content;
     margin-bottom: 16px;
+    margin-top: 48px;
 }
 #back .button-primary p{
     margin: 6px auto;
@@ -231,6 +232,30 @@ article p {
     line-height: 120%;
 }
 
+@media screen and (max-width: 1024px) {
+    .grid-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-items-container {
+        min-width: 0px;
+    }
+    .row.gods {
+        column-gap: 48px ;
+    }
+    article .image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 426px){
+    .row.gods {
+        flex-direction: column;
+    }
+    .grid-items {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
 
 @keyframes fadeIn {
     0% { opacity: 0; }

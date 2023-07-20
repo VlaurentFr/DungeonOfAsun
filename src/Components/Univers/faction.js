@@ -1,18 +1,15 @@
 import { useState } from 'react';
 import { IoMdPin } from 'react-icons/io';
 import { Button } from '../button';
-import { orga } from './mock/orgaMock';
-const Cults = (props) => {
+import { faction } from './mock/factionMock';
+const Faction = (props) => {
 	let [selectedCults, setSelectedCults] = useState(null);
 	return (
 		<div>
 			<div className={selectedCults ? 'invisible' : 'visible'}>
 					<div>
-						<div className='title-section'>
-							{props.title && <h3>Les organisations jouables</h3>}
-						</div>
 						<div className='orga-container'>
-							{orga.map((v, index) => {
+							{faction.map((v, index) => {
 								return (
 										<div
 											className='orga-card'
@@ -49,15 +46,9 @@ const Cults = (props) => {
 							<p>{selectedCults?.desc}</p>
 							<img src={selectedCults?.img}></img>
 				</div>
-				<div className='title-section'>
-					<h3>Rangs</h3>
-				</div>
-				<ul>
-					{selectedCults?.rank.map((v) => <li><span className='title'>{v.name}</span> {v.desc}</li>)}
-				</ul>
 			</div>
 		</div>
 	);
 };
 
-export default Cults;
+export default Faction;
