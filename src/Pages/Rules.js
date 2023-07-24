@@ -5,6 +5,7 @@ import { useLocation, Link } from 'react-router-dom';
 import Orga from "../Components/Univers/orga"
 import Fight from '../Components/Rules/Fight';
 import Weapon from '../Components/Rules/Weapon';
+import Classes from '../Components/Rules/Classes';
 
 export const Rules = (props) => {
 	return (
@@ -15,18 +16,13 @@ export const Rules = (props) => {
 				</div>
 				<div className=' sideMenuContent'>
 					<div className='slot'>
-						<Link to='/Rules'>
-							<p className={useLocation().pathname === '/Rules' && 'selected'}>Vue d'ensemble</p>
+						<Link to='/Rules/creation'>
+							<p className={useLocation().pathname === '/Rules/creation' && 'selected'}>Création de personnage</p>
 						</Link>
 					</div>
 					<div className='slot'>
 						<Link to='/Rules/fight'>
 							<p className={useLocation().pathname === '/Rules/fight' && 'selected'}>Combat</p>
-						</Link>
-					</div>
-					<div className='slot'>
-						<Link to='/Rules/creation'>
-							<p className={useLocation().pathname === '/Rules/creation' && 'selected'}>Création de personnage</p>
 						</Link>
 					</div>
 					<div className='slot'>
@@ -60,6 +56,20 @@ export const Rules = (props) => {
 							<h2>Découvrez comment ce déroule les combats</h2>
 						</div>
 						<Fight></Fight>
+					</div>
+				</section>
+			)}
+			{useLocation().pathname === '/Rules/class' && (
+				<section
+					ref={props.refProp4a}
+					className='container'
+				>
+					<div>
+						<div className='title-page'>
+							<h1>Classes</h1>
+							<h2>Découvrezles classes jouables</h2>
+						</div>
+						<Classes></Classes>
 					</div>
 				</section>
 			)}

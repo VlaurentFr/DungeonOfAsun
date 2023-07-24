@@ -264,6 +264,22 @@ p, a {
     opacity: 0.6;
     filter: blur(8px);
 }
+
+#map { height: 180px; }
+figure.zoom {
+& img:hover {
+    opacity: 0;
+}
+img {
+    transition: opacity .5s;
+    display: block;
+    width: 100%;
+}
+background-position: 50% 50%;
+position: relative;
+overflow: hidden;
+cursor: zoom-in;
+}
 /* ========================
 Nav
 ======================== */
@@ -333,11 +349,16 @@ nav div a:hover {
     font-family: Helvetica;
     flex: 1;
 }
-
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     .container {
         margin: 80px 0px 0px 80px;
         height: 50%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .container {
+        /* margin: 80px 0px 0px 80px; */
+        /* height: 50%; */
     }
     nav {
         flex-direction: column;
