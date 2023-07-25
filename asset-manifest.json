@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/DungeonOfAsun/static/css/main.bce9a7e9.css",
-    "main.js": "/DungeonOfAsun/static/js/main.2134e090.js",
+    "main.js": "/DungeonOfAsun/static/js/main.12d9a674.js",
     "static/media/bg.png": "/DungeonOfAsun/static/media/bg.0c07ea67abbf6baf01d4.png",
     "static/media/bg1.png": "/DungeonOfAsun/static/media/bg1.eab1006763883c2907fd.png",
     "index.html": "/DungeonOfAsun/index.html",
     "main.bce9a7e9.css.map": "/DungeonOfAsun/static/css/main.bce9a7e9.css.map",
-    "main.2134e090.js.map": "/DungeonOfAsun/static/js/main.2134e090.js.map"
+    "main.12d9a674.js.map": "/DungeonOfAsun/static/js/main.12d9a674.js.map"
   },
   "entrypoints": [
     "static/css/main.bce9a7e9.css",
-    "static/js/main.2134e090.js"
+    "static/js/main.12d9a674.js"
   ]
 }
