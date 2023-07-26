@@ -58,6 +58,10 @@ table {
 -ms-overflow-style: none;  /* IE and Edge */
 scrollbar-width: none;  /* Firefox */
 }
+table, td, th, tr {
+    border: white 1px solid;
+    padding: 16px;
+}
 
 :root {
   --primaryColor: #DC5A41;

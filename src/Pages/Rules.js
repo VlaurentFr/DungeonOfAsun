@@ -40,9 +40,6 @@ export const Rules = (props) => {
 							<p className={useLocation().pathname === '/Rules/orga' && 'selected'}>Organisations</p>
 						</Link>
 					</div>
-					<div className='slot'>
-						<p>Races</p>
-					</div>
 				</div>
 			</side>
 			{useLocation().pathname === '/Rules/fight' && (

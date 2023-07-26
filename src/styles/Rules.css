@@ -10,6 +10,8 @@
     background-color: var(--secondaryColor);
     border-radius: 8px;
     height: 4px;
+    width: 0%;
+    transition: all ease-in-out 300ms;
 }
 .gauge-4 {
     position: absolute;
