@@ -13,14 +13,239 @@ const Weapon = (props) => {
 							<h3>L'expériences</h3>
 						</div>
 						<div className='weapon-container'>
-							<img src="/DungeonOfAsun/Assets/weapons/tab3.png"></img>
-							<img style={{height: '186px'}} src="/DungeonOfAsun/Assets/weapons/tab1.png"></img>
+							<table>
+								<thead>
+									<tr>
+										<th colspan="13">Niveau de maîtrise</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Maîtrise</td>
+										<td>E</td>
+										<td>E+</td>
+										<td>D</td>
+										<td>D+</td>
+										<td>C</td>
+										<td>C+</td>
+										<td>B</td>
+										<td>B+</td>
+										<td>A</td>
+										<td>A+</td>
+										<td>S</td>
+										<td>S+</td>
+									</tr>
+									<tr>
+										<td>Exp. requises</td>
+										<td>0</td>
+										<td>3</td>
+										<td>6</td>
+										<td>12</td>
+										<td>18</td>
+										<td>27</td>
+										<td>36</td>
+										<td>48</td>
+										<td>60</td>
+										<td>74</td>
+										<td>88</td>
+										<td>116</td>
+									</tr>
+								</tbody>
+							</table>
+							<table>
+								<thead>
+									<tr>
+										<th colspan="4">Entraînement de Classe</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Type</td>
+										<td>Seul</td>
+										<td>Double</td>
+										<td>Tutoré</td>
+									</tr>
+									<tr>
+										<td>Exp. Gagné</td>
+										<td>2d6</td>
+										<td>1d6</td>
+										<td>x1,5</td>
+									</tr>
+								</tbody>
+							</table>
+							{/* <img src="/DungeonOfAsun/Assets/weapons/tab3.png"></img> */}
+							{/* <img style={{height: '186px'}} src="/DungeonOfAsun/Assets/weapons/tab1.png"></img> */}
 						</div>
 						<div className='title-section'>
 							<h3>Les bonus</h3>
 						</div>
 						<div className='weapon-container'>
-							<img src="/DungeonOfAsun/Assets/weapons/tab2.png"></img>
+						<table>
+								<thead>
+									<tr>
+										<th colspan="13">Maitrises d'armes</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td></td>
+										<td>Epée</td>
+										<td>Hache</td>
+										<td>Lance</td>
+										<td>Arc</td>
+										<td>Dague</td>
+										<td>Masse</td>
+										<td>Poing</td>
+										<td>Bouc.</td>
+										<td>Magie</td>
+									</tr>
+									<tr>
+										<td>E</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>E+</td>
+										<td>+5 d'ESQ</td>
+										<td>+5 d'ESQ</td>
+										<td>+5 d'ESQ</td>
+										<td>+5 d'ESQ</td>
+										<td>+5 d'ESQ</td>
+										<td>+5 d'ESQ</td>
+										<td>+5 d'ESQ</td>
+										<td></td>
+										<td>+5 d'ESQ</td>
+									</tr>
+									<tr>
+										<td>D</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>D+</td>
+										<td>+5 ATQ</td>
+										<td>+5 ATQ</td>
+										<td>+5 ATQ</td>
+										<td>+5 ATQ</td>
+										<td>+5 ATQ</td>
+										<td>+5 ATQ</td>
+										<td>+5 ATQ</td>
+										<td></td>
+										<td>+5 ATQ</td>
+									</tr>
+									<tr>
+										<td>C</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>CTR CàC</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>+5 PRD</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>C+</td>
+										<td>+5 d'ESQ</td>
+										<td>+5 d'ESQ</td>
+										<td>+5 d'ESQ</td>
+										<td>+5 d'ESQ</td>
+										<td>+5 d'ESQ</td>
+										<td>+5 d'ESQ</td>
+										<td>+5 d'ESQ</td>
+										<td></td>
+										<td>+5 d'ESQ</td>
+									</tr>
+									<tr>
+										<td>B</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>B+</td>
+										<td>+5 ATQ</td>
+										<td>+5 ATQ</td>
+										<td>+5 ATQ</td>
+										<td>+5 ATQ</td>
+										<td>+5 ATQ</td>
+										<td>+5 ATQ</td>
+										<td>+5 ATQ</td>
+										<td></td>
+										<td>+5 ATQ</td>
+									</tr>
+									<tr>
+										<td>A</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>A+</td>
+										<td>+5 d'ESQ</td>
+										<td>+5 d'ESQ</td>
+										<td>+5 d'ESQ</td>
+										<td>+5 d'ESQ</td>
+										<td>+5 d'ESQ</td>
+										<td>+5 d'ESQ</td>
+										<td>+5 d'ESQ</td>
+										<td>+10 PRD</td>
+										<td>+5 d'ESQ</td>
+									</tr>
+									<tr>
+										<td>S</td>
+										<td>+10 CRIT</td>
+										<td>+10 CRIT</td>
+										<td>+10 CRIT</td>
+										<td>+10 CRIT</td>
+										<td>+10 CRIT</td>
+										<td>+10 CRIT</td>
+										<td>+10 CRIT</td>
+										<td></td>
+										<td>+10 CRIT</td>
+									</tr>
+									<tr>
+										<td>S+</td>
+										<td>+5 ATQ</td>
+										<td>+5 ATQ</td>
+										<td>+5 ATQ</td>
+										<td>+5 ATQ</td>
+										<td>+5 ATQ</td>
+										<td>+5 ATQ</td>
+										<td>+5 ATQ</td>
+										<td>+5 PRD</td>
+										<td>+5 ATQ</td>
+									</tr>
+								</tbody>
+							</table>
+							{/* <img src="/DungeonOfAsun/Assets/weapons/tab2.png"></img> */}
 						</div>
 					</div>
 			</div>

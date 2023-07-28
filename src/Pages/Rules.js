@@ -6,6 +6,7 @@ import Orga from "../Components/Univers/orga"
 import Fight from '../Components/Rules/Fight';
 import Weapon from '../Components/Rules/Weapon';
 import Classes from '../Components/Rules/Classes';
+import Spell from '../Components/Rules/Spell';
 
 export const Rules = (props) => {
 	return (
@@ -40,6 +41,11 @@ export const Rules = (props) => {
 							<p className={useLocation().pathname === '/Rules/orga' && 'selected'}>Organisations</p>
 						</Link>
 					</div>
+					<div className='slot'>
+						<Link to='/Rules/spell'>
+							<p className={useLocation().pathname === '/Rules/spell' && 'selected'}>Sorts</p>
+						</Link>
+					</div>
 				</div>
 			</side>
 			{useLocation().pathname === '/Rules/fight' && (
@@ -64,7 +70,7 @@ export const Rules = (props) => {
 					<div>
 						<div className='title-page'>
 							<h1>Classes</h1>
-							<h2>Découvrezles classes jouables</h2>
+							<h2>Découvrez les classes jouables</h2>
 						</div>
 						<Classes></Classes>
 					</div>
@@ -81,6 +87,20 @@ export const Rules = (props) => {
 							<h2>Découvrez comment fonctionne les maîtrises d'armes</h2>
 						</div>
 						<Weapon></Weapon>
+					</div>
+				</section>
+			)}
+			{useLocation().pathname === '/Rules/spell' && (
+				<section
+					ref={props.refProp4a}
+					className='container'
+				>
+					<div>
+						<div className='title-page'>
+							<h1>Sorts</h1>
+							<h2>Découvrez la liste des sorts de l'univers</h2>
+						</div>
+						<Spell></Spell>
 					</div>
 				</section>
 			)}

@@ -5,6 +5,8 @@
    License: none (public domain)
 */
 @import url('https://fonts.cdnfonts.com/css/work-sans');
+@import url('https://fonts.cdnfonts.com/css/hikidding');
+@import url('https://fonts.googleapis.com/css?family=Manrope');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -61,6 +63,10 @@ scrollbar-width: none;  /* Firefox */
 table, td, th, tr {
     border: white 1px solid;
     padding: 16px;
+    margin-bottom: 16px;
+}
+thead {
+    background-color: var(--dark);
 }
 
 :root {
@@ -348,9 +354,10 @@ nav div a:hover {
 }
 
 #scroll-1 {
-    font-size: 24px;
+    font-size: 40px;
     margin-left: 25px;
-    font-family: Helvetica;
+    font-weight: 400;
+    font-family: 'Hikidding';
     flex: 1;
 }
 @media screen and (max-width: 768px) {

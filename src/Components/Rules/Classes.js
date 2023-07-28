@@ -62,19 +62,19 @@ const Classes = (props) => {
       <article>
         <div className={"row gods"}>
             <div className="grid-items-container-classes flex">
-              <h1>Classes de base (3)</h1>
+              <h1>Classes de base ({basicClasses.length})</h1>
               <div className="grid-items">
                 { basicClasses.map((v) => <img src={ v.img } onClick={() => {setSelected({...v});}}></img>)}
               </div>
-              <h1>Classes Novice (21)</h1>
+              <h1>Classes Novice ({noviceClasses.length})</h1>
               <div className="grid-items">
               { noviceClasses.map((v) => <img src={ v.img } onClick={() => {setSelected({...v});}}></img>)}
               </div>
-              <h1>Classes Avancées (38)</h1>
+              <h1>Classes Avancées ({avancedClasses.length})</h1>
               <div className="grid-items">
               { avancedClasses.map((v) => <img src={ v.img } onClick={() => {setSelected({...v});}}></img>)}
               </div>
-              <h1>Classes Maîtres (40)</h1>
+              <h1>Classes Maîtres ({masterClasses.length})</h1>
               <div className="grid-items">
               { masterClasses.map((v) => <img src={ v.img } onClick={() => {setSelected({...v});}}></img>)}
               </div>
@@ -108,21 +108,7 @@ const Classes = (props) => {
           <h3>Informations sur la classe</h3>
       </div>
       <article className='row selected-item'>
-        <div className='flex'>
-          <h4>Maîtrises d'armes prérequis</h4>
-          <ul>
-          {selected?.weapons?.map((m) => <li className='flex description'>{m}</li>) }
-          </ul>
-          <h4>Races prérequises</h4>
-          <ul>
-          {selected?.races?.map((m) => <li className='flex description'>{m}</li>) }
-          </ul>
-          <h4>Maîtrises d'armes prérequis</h4>
-          <ul>
-          {selected?.mastery?.map((m) => <li className='flex description'>{m}</li>) }
-          </ul>
-        </div>
-        <div className='flex'>
+      <div className='flex'>
           <h4>Sorts</h4>
           <ul>
           {selected?.spell?.map((s) => spell.map((sp) => sp?.name === s && <li>{sp?.name}
@@ -134,6 +120,16 @@ const Classes = (props) => {
               <li>portée: {sp?.range}</li>
             </ul>
           </li>)) }
+          </ul>
+        </div>
+        <div className='flex'>
+          <h4>Maîtrises d'armes prérequis</h4>
+          <ul>
+          {selected?.weapons?.map((m) => <li className='flex description'>{m}</li>) }
+          </ul>
+          <h4>Bonus de Maîtrises</h4>
+          <ul>
+          {selected?.mastery?.map((m) => <li className='flex description'>{m}</li>) }
           </ul>
         </div>
       </article>
