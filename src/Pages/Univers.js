@@ -7,6 +7,7 @@ import Story from '../Components/Univers/story';
 import Cults from '../Components/Univers/Cults/Cults';
 import Orga from '../Components/Univers/orga';
 import Faction from '../Components/Univers/faction';
+import Races from '../Components/Univers/races';
 
 export const Univers = (props) => {
 	return (
@@ -58,7 +59,9 @@ export const Univers = (props) => {
 						</Link>
 					</div>
 					<div className='slot'>
-						<p>Races</p>
+						<Link to='/Univers/races'>
+							<p className={useLocation().pathname === '/Univers/races' && 'selected'}>Races</p>
+						</Link>
 					</div>
 					<div className='slot'>
 						<p>Magie</p>
@@ -138,6 +141,20 @@ export const Univers = (props) => {
 							<h2>Découvrez les factions de l'univers</h2>
 						</div>
 						<Faction></Faction>
+					</div>
+				</section>
+			)}
+			{useLocation().pathname === '/Univers/races' && (
+				<section
+					ref={props.refProp4a}
+					className='container'
+				>
+					<div>
+						<div className='title-page'>
+							<h1>Factions</h1>
+							<h2>Découvrez les races de l'univers</h2>
+						</div>
+						<Races></Races>
 					</div>
 				</section>
 			)}

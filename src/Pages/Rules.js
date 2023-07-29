@@ -7,6 +7,7 @@ import Fight from '../Components/Rules/Fight';
 import Weapon from '../Components/Rules/Weapon';
 import Classes from '../Components/Rules/Classes';
 import Spell from '../Components/Rules/Spell';
+import Crea from '../Components/Rules/Crea';
 
 export const Rules = (props) => {
 	return (
@@ -48,6 +49,20 @@ export const Rules = (props) => {
 					</div>
 				</div>
 			</side>
+			{useLocation().pathname === '/Rules/creation' && (
+				<section
+					ref={props.refProp4a}
+					className='container'
+				>
+					<div>
+						<div className='title-page'>
+							<h1>Creation de personnage</h1>
+							<h2>Découvrez comment créer votre personnage pour jouer</h2>
+						</div>
+						<Crea></Crea>
+					</div>
+				</section>
+			)}
 			{useLocation().pathname === '/Rules/fight' && (
 				<section
 					ref={props.refProp4a}

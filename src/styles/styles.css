@@ -64,11 +64,14 @@ table, td, th, tr {
     border: white 1px solid;
     padding: 16px;
     margin-bottom: 16px;
+    height: fit-content;
 }
 thead {
     background-color: var(--dark);
 }
-
+p {
+    white-space: pre-line;
+}
 :root {
   --primaryColor: #DC5A41;
   --primaryColorTint: #eb6145;
@@ -367,9 +370,8 @@ nav div a:hover {
     }
 }
 @media screen and (max-width: 1024px) {
-    .container {
-        /* margin: 80px 0px 0px 80px; */
-        /* height: 50%; */
+    .row {
+        flex-direction: column;
     }
     nav {
         flex-direction: column;

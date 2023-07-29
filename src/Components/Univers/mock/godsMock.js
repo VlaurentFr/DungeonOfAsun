@@ -108,30 +108,45 @@ export const minorGods = [
     cults: [1],
     title: `Le messager, Dieu de la pénitence`,
     img: `/DungeonOfAsun/Assets/gods/Xegmir.png`,
+    desc: `Xegmir est un dieu terrifiant, représentant le péché et la cruauté. Il incarne la chasse aux âmes qui cherchent à fuir leur destinée. Il est craint par les mortels qui savent que leur salut dépend de leur comportement dans leur vie terrestre. Il est souvent représenté sous la forme d'un chasseur, vêtu de noir, avec une lance à la main. Il a un visage sans expression, avec des yeux rouges qui reflètent la souffrance de ceux qu'il pourchasse. Son armure est noire, ornée de pierres rouges qui symbolisent le sang des damnés. Xegmir a également des ailes de chauve-souris qui lui permettent de se déplacer rapidement d'un endroit à l'autre. Il est dit que Xegmir a été celui qui a inspiré la création de l'outre-tombe, un endroit où les âmes sont envoyées pour expier leurs fautes. Il considère que certaines âmes ne sont pas dignes de son père et il les punit avec une cruauté implacable. Les mortels qui ont commis des péchés graves savent que s'ils sont pris par Xegmir, ils seront soumis à des tortures terribles jusqu'à ce qu'ils acceptent de payer pour leurs fautes. Malgré sa nature impitoyable, Xegmir est également un dieu fidèle et dévoué à son père Théomis. Il accomplit avec zèle les missions qu'il lui confie, chassant les âmes récalcitrantes et punissant les blasphémateurs. Cependant, il est souvent vu comme un dieu à éviter, plutôt qu'à adorer.
+    `,
   },
   {
     name: `Cione`,
     cults: [4, 5],
     title: `Déesse de l’aube`,
     img: `/DungeonOfAsun/Assets/gods/Cione.png`,
+    desc: `Première des déesse jumelle, elle s’oppose à sa soeur Cirana,
+    fille de Fauscht et Metona. Elle incarne la beauté et la compassion souvent confondue avec sa mère Metona et la Déesse des merveilles Noheia. 
+    Elle est également l’incarnation de la guerre tout comme sa sœur.  Cione peut être invoquée pour apporter de la guérison, de la régénération ou de la lumière dans les moments sombres. Les joueurs peuvent chercher son aide dans leur quête pour la paix et l'harmonie, ou chercher à obtenir sa bénédiction pour une nouvelle entreprise ou un nouveau départ.
+    Elle est associée à l'émergence du soleil et à l'arrivée d'une nouvelle journée. Elle est célébrée pour sa capacité à apporter la lumière et l'espoir dans les moments les plus sombres. On dit que son énergie positive éclaire les ténèbres et purifie l'esprit
+    `,
   },
   {
     name: `Cirana`,
     cults: [4, 5],
     title: `Déesse du crépuscule`,
     img: `/DungeonOfAsun/Assets/gods/Cirana.png`,
+    desc: `Cirana, la déesse du crépuscule, est la deuxième des déesses jumelles. Elle s'oppose à sa sœur Cione, fille de Fauscht et Metona. Souvent confondue avec Phiella en raison de son surnom, "la tisseuse d'ombres", elle est la rebelle de la famille et préfère la nuit et les ombres. Bien qu'il n'y ait aucune preuve concrète, certains disent qu'elle serait à l'origine de la création des premiers elfes noirs. Elle incarne souvent le côté sombre de la vie et de la nature. Elle est également l'incarnation de la guerre, tout comme sa sœur. Les adeptes de Cirana sont souvent des assassins ou des voleurs qui se déplacent dans l'obscurité et se cachent dans les ombres pour accomplir leur mission.
+    `,
   },
   {
     name: `Heilong`,
     cults: [3],
     title: `Dieu du courage`,
     img: `/DungeonOfAsun/Assets/gods/Heiloong.png`,
+    desc: `Fils de Riannedos, Heilong est un drakéides devenu un dieu après avoir combattu pendant 100 jours sans interruption contre Edes lors de la purge draconique. Par la suite, épuisé Edes accepta de ne tuer que les dragons du continent de Therion et laisser les drakéides survivant en vie. 
+    Heilong est un dieu impétueux et courageux, qui ne recule devant aucun défi. Il encourage ses fidèles à être courageux et à ne pas craindre la peur. Il est également loyal et protecteur envers ceux qui lui sont fidèles, et est prêt à défendre ses croyants en toutes circonstances.
+    Les fidèles de Heilong sont souvent des guerriers courageux et des aventuriers téméraires. Ils célèbrent leur dieu avec des rituels de combat, des compétitions et des cérémonies qui honorent le courage et l'audace. Heilong est également invoqué avant les batailles pour donner aux guerriers le courage de faire face à leurs ennemis avec détermination et bravoure.
+    `,
   },
   {
     name: `Hrothgar`,
     cults: [10],
     title: `Héros légendaire des Hightlands`,
     img: `/DungeonOfAsun/Assets/gods/Hrothgar.png`,
+    desc: `Hrothgar, l’Aigle du Nord, est un héros légendaire du peuple des Skurf, vénéré comme une divinité guerrière et le défenseur de son peuple. Sa réputation de vaillant combattant est connue dans tout la région, et il est souvent invoqué par les guerriers avant la bataille. On dit qu'il a vaincu seul un groupe de géants des glaces qui terrorisaient les villages voisins, et qu'il a mené son peuple à la victoire lors d'une bataille décisive contre les forces ennemies. Hrothgar est également connu pour son courage, sa loyauté et son honneur inébranlable. Il est considéré comme le modèle parfait du guerrier nordique, et est souvent invoqué lors des cérémonies de mariage ou des funérailles pour bénir les nouveaux mariés ou guider l'âme des défunts vers l'au-delà. Beaucoup de guerriers portent des plumes d'aigle en son honneur, croyant qu'elles leur donneront le courage et la force d'Hrothgar sur le champ de bataille. En somme, Hrothgar est un héros et une divinité guerrière vénérée pour son courage, sa loyauté et son honneur, ainsi que pour son lien avec l'aigle, symbole de la puissance et de la liberté.
+    `,
   },
 ];
 export const kingGods = [
@@ -188,24 +203,38 @@ export const princeGods = [
     cults: [11],
     title: `Le bourreau, Dieu du meurtre`,
     img: `/DungeonOfAsun/Assets/gods/Sithis.png`,
+    desc: `Dieu du meurtre, fils de Phiella et Rhabus, certains pense que cétait autrefois un homme qui as fini par être corompue par les ténèbres. Si Fauscht incarne l'arrivée de la mort, Sithis est la mort. Il représente la destruction, la douleur et la souffrance. Sa fonction principale est de torturer et d'infliger des douleurs intenses aux âmes qu'il capture et aux ennemis de ses adorateurs.
+    Sithis est craint et vénéré par les sectes et les cultes qui pratiquent des rituels sanglants et des sacrifices humains en son nom. Sa présence est souvent accompagnée de la peur et de l'horreur, car il peut déchaîner sa colère sur quiconque ose s'opposer à lui. Il est considéré comme un messager de la mort et un serviteur de la destruction, et son pouvoir est souvent invoqué pour causer la désolation et le chaos.
+    `,
   },
   {
     name: `Othar`,
     cults: [5, 10],
     title: `Dieu des marchés`,
     img: `/DungeonOfAsun/Assets/gods/Othar.png`,
+    desc: `Fils de Buklos et de Phiella, ont dit que sont sang et son palais sont en or. Avare, les hommes qui passent en marché avec lui finissent tous par en payer le prix fort. Il représente la cupidité, l'avidité et la tromperie dans le domaine des affaires et du commerce. Il est souvent décrit comme une créature rusée et malicieuse, avec un sourire trompeur et des yeux perçants qui cherchent à tromper et à corrompre les plus faibles. Il est vénéré par les personnes qui cherchent à tirer profit de manière malhonnête, en utilisant la tromperie et la manipulation pour atteindre leurs objectifs.
+    Othar est souvent représenté comme un manipulateur habile, sachant comment convaincre les autres de faire des affaires injustes et illégales. Cependant, il est également considéré comme imprévisible et potentiellement dangereux, car il peut facilement trahir ceux qui lui font confiance. Il est souvent invoqué par les criminels et les tricheurs pour obtenir une richesse facile, mais sa présence est toujours accompagnée de risques et de conséquences graves.
+    `,
   },
   {
     name: `Thorvarus`,
     cults: [4, 5],
     title: `Dieu des complots`,
     img: `/DungeonOfAsun/Assets/gods/Thorvarus.png`,
+    desc: `Fils de Rhabus et de Phiella, il est le dieu des complots mais également le dieu des voleurs. On dit que c’est lui qui aurait planifier et organiser la mort de Neien pour lui dérober quelque chose dont il était incapable ce dernier en vie. De fait on dit que rien lui est impossible.
+    Thorvarus est un être calculateur et cynique. Il prend un malin plaisir à manipuler les autres pour obtenir ce qu'il veut, souvent pour son propre bénéfice. Il est extrêmement habile pour jouer sur les peurs et les désirs des autres et pour semer la discorde. Thorvarus est également très prudent, préférant travailler dans l'ombre et éviter tout risque inutile.
+    Les adeptes de Thorvarus se réunissent souvent en secret pour planifier des complots et des machinations. Ils sont souvent très éduqués et sophistiqués, capables de manipuler les événements pour obtenir leur propre avantage. Thorvarus est souvent invoqué lors de cérémonies de sorcellerie pour apporter son pouvoir de tromperie et de manipulation aux sorts lancés.
+    `,
   },
   {
     name: `Zadir`,
     cults: [11],
     title: `Dieu des sacrifices`,
     img: `/DungeonOfAsun/Assets/gods/Zadir.png`,
+    desc: `dieu des sacrifices mais aussi dieu de l’esclavagisme, il est un être cruel et sanguinaire. Fils de Rhabus et de Phiella, il a l'apparence d'un être avec de longues cheveux rouge. Zadir voue une véritable passion pour les femmes humaines, qu'il capture et retient prisonnières dans son palais. Son passe-temps favori est d'assister aux sacrifices offerts par ses adeptes, qui lui vouent un culte fanatique.
+
+    Cependant, Zadir est devenu de plus en plus difficile à satisfaire au fil des siècles, et il exige des sacrifices toujours plus importants et sanglants. Pour combler son insatiable soif de sang, il organise même des tournois à mort, mettant en scène des combattants sacrifiés pour son plaisir. Les joueurs devront se méfier des adeptes de Zadir, qui chercheront à les entraîner dans des pratiques sombres et dangereuses pour plaire à leur dieu.
+    `,
   },
   {
     name: `Archombre`,
@@ -219,103 +248,122 @@ export const princeGods = [
     cults: [],
     title: `Dieu des hommes bêtes`,
     img: `/DungeonOfAsun/Assets/gods/Belz.png`,
+    desc: `Origine inconnu. Probablement fils de Zadir et Phiella. Il est le dieu suprême vénéré par les hommes-bêtes. Physiquement, il est représenté comme une immense créature humanoïde mi-homme mi-bouc, avec une barbe épaisse, des cornes en spirale et une peau couverte de poils. Sa nature chaotique et sauvage est reflétée dans sa personnalité, où il est souvent décrit comme un dieu colérique et imprévisible, qui peut autant accorder des faveurs que causer la destruction.
+    Les hommes-bêtes, le voient comme leur protecteur et leur guide, et lui offrent des sacrifices de sang et de viande pour gagner sa faveur. Ils croient que le dieu leur accorde des bénédictions telles que des récoltes abondantes, des succès lors de la chasse et des victoires en combat. Les prêtres de Belzebuth, sont chargés de maintenir la communication entre les hommes-bêtes et leur dieu, et d'utiliser la magie sauvage pour lancer des sorts qui aident leur tribu.
+    `,
   },
 ];
 export const otherGods = [
   {
     name: `Hanuman`,
     cults: [6],
-    title: `Le bourreau, Dieu du meurtre`,
+    title: `Dieu-singe suprême`,
     img: `/DungeonOfAsun/Assets/gods/hanuman.png`,
+    desc: `le dieu-singe suprême, vénéré comme le père fondateur des hommes-singes et le protecteur de leur race. Il est représenté avec une tête de singe et un corps humanoïde. Il est considéré comme le dieu de la force, de la ruse et de la sagesse.`,
   },
   {
     name: `Kapi`,
     cults: [6],
-    title: `Le bourreau, Dieu du meurtre`,
+    title: `Dieu-singe de la fertilité et de la croissance`,
     img: `/DungeonOfAsun/Assets/gods/kapi.png`,
+    desc: `dieu-singe de la fertilité et de la croissance, représenté avec un visage grimaçant et une longue queue. Il est le gardien des jardins, des vergers et des forêts, et est souvent invoqué pour assurer une récolte abondante.`,
   },
   {
     name: `Marakata`,
     cults: [6],
-    title: `Le bourreau, Dieu du meurtre`,
+    title: `déesse de la guérison et de la magie`,
     img: `/DungeonOfAsun/Assets/gods/marakata.png`,
+    desc: `déesse de la guérison et de la magie, représentée avec un corps couvert de pierres précieuses et de bijoux. Elle est souvent invoquée pour guérir les maladies et les blessures, ainsi que pour protéger les sages-femmes et les médecins.`,
   },
   {
     name: `Langur`,
     cults: [6],
-    title: `Le bourreau, Dieu du meurtre`,
+    title: `dieu-singe de la justice et de l'honnêteté`,
     img: `/DungeonOfAsun/Assets/gods/langur.png`,
+    desc: `dieu-singe de la justice et de l'honnêteté, représenté avec un corps long et mince et un visage sage. Il est souvent invoqué par les hommes-singes pour régler les conflits et les litiges, et est considéré comme le gardien des lois et des valeurs morales.`,
   },
   {
     name: `Aranya`,
     cults: [6],
-    title: `Le bourreau, Dieu du meurtre`,
+    title: `déesse de la nature et de la vie sauvage`,
     img: `/DungeonOfAsun/Assets/gods/aranya.png`,
+    desc: `déesse de la nature et de la vie sauvage, représentée avec des feuilles à la place des cheveux. Elle est la gardienne des forêts et des animaux, et est souvent invoquée pour bénir les chasseurs et les cueilleurs.`,
   },
   {
     name: `Riksha`,
     cults: [6],
-    title: `Le bourreau, Dieu du meurtre`,
+    title: `dieu-singe des arts et de la musique`,
     img: `/DungeonOfAsun/Assets/gods/riksha.png`,
+    desc: `dieu-singe des arts et de la musique, représenté avec une longue barbe et des yeux perçants. Il est souvent invoqué pour inspirer les artistes et les musiciens, et est considéré comme le gardien des talents créatifs.`,
   },
   {
     name: `Valimukha`,
     cults: [6],
-    title: `Le bourreau, Dieu du meurtre`,
+    title: `dieu-singe de la guerre et de la destruction`,
     img: `/DungeonOfAsun/Assets/gods/vali.png`,
+    desc: `dieu-singe de la guerre et de la destruction, représenté avec une tête de gorille et un corps musclé. Il est souvent invoqué avant les batailles pour apporter la victoire, mais est également craint pour sa colère incontrôlable et sa soif de sang.`,
   },
   {
     name: `Moradin`,
     cults: [7],
-    title: `Le bourreau, Dieu du meurtre`,
-    img: `/DungeonOfAsun/Assets/gods/Sithis.png`,
+    title: `Dieu de la forge et de la création`,
+    img: `/DungeonOfAsun/Assets/gods/Moradin.webp`,
+    desc: `Dieu de la forge et de la création, Moradin est le dieu suprême des nains. Il est vénéré pour sa sagesse, son savoir-faire et sa force, et est souvent invoqué par les artisans et les guerriers nains pour leur donner la force et la détermination nécessaires pour accomplir leur travail.`,
   },
   {
     name: `Clangeddin`,
     cults: [7],
-    title: `Le bourreau, Dieu du meurtre`,
-    img: `/DungeonOfAsun/Assets/gods/Sithis.png`,
+    title: `Dieu de la guerre et de la vengeance`,
+    img: `/DungeonOfAsun/Assets/gods/Clangeddin.png`,
+    desc: `Dieu de la guerre et de la vengeance, Clangeddin est le dieu de choix pour les guerriers nains qui cherchent à protéger leur peuple et leur foyer contre les ennemis. Il est souvent invoqué lors des combats pour donner aux nains la force de vaincre leurs adversaires.`,
   },
   {
     name: `Dumathoin`,
     cults: [7],
-    title: `Le bourreau, Dieu du meurtre`,
-    img: `/DungeonOfAsun/Assets/gods/Sithis.png`,
+    title: `Dieu de la terre et des cavernes`,
+    img: `/DungeonOfAsun/Assets/gods/Dumathoin.png`,
+    desc: `Dieu de la terre et des cavernes, Dumathoin est le protecteur des mines et des carrières naines. Il est vénéré pour sa capacité à révéler les richesses cachées de la terre et à protéger les nains lors de l'exploitation de ces richesses.`,
   },
   {
     name: `Moradul`,
     cults: [7],
-    title: `Le bourreau, Dieu du meurtre`,
-    img: `/DungeonOfAsun/Assets/gods/Sithis.png`,
+    title: `Dieu de la richesse et de l'avarice`,
+    img: `/DungeonOfAsun/Assets/gods/Moradul.webp`,
+    desc: `Dieu de la richesse et de l'avarice, Moradul est vénéré pour sa capacité à attirer la richesse et la prospérité vers les nains. Cependant, son culte est souvent associé à l'avarice et à la cupidité, et il est souvent considéré comme un dieu plus sinistre que les autres dieux nains.`,
   },
   {
     name: `Abbathor`,
     cults: [7],
-    title: `Le bourreau, Dieu du meurtre`,
-    img: `/DungeonOfAsun/Assets/gods/Sithis.png`,
+    title: `Dieu du vol et de la tromperie`,
+    img: `/DungeonOfAsun/Assets/gods/Abbathor.png`,
+    desc: `Dieu du vol et de la tromperie, Abbathor est le dieu des nains qui cherchent à s'enrichir rapidement et facilement. Son culte est souvent mal vu par les autres nains, mais il est parfois invoqué pour des besoins spécifiques comme l'espionnage ou le sabotage.`,
   },
   {
     name: `Berronar`,
     cults: [7],
-    title: `Le bourreau, Dieu du meurtre`,
-    img: `/DungeonOfAsun/Assets/gods/Sithis.png`,
+    title: `Déesse de la famille et de la protection`,
+    img: `/DungeonOfAsun/Assets/gods/Berronar.png`,
+    desc: `Déesse de la famille et de la protection, Berronar est la patronne des mères et des gardiennes naines. Elle est souvent invoquée pour protéger les familles et les foyers nains contre les dangers extérieurs.`,
   },
   {
     name: `Thard Harr`,
     cults: [7],
-    title: `Le bourreau, Dieu du meurtre`,
-    img: `/DungeonOfAsun/Assets/gods/Sithis.png`,
+    title: `Dieu de la pierre et de la construction`,
+    img: `/DungeonOfAsun/Assets/gods/Thard.png`,
+    desc: `Dieu de la pierre et de la construction, Thard Harr est le dieu des architectes et des constructeurs nains. Il est invoqué pour la construction de bâtiments et de fortifications naines, et est souvent considéré comme l'un des dieux les plus importants de la communauté naine.`,
   },
   {
     name: `Gorm Gulthyn`,
     cults: [7],
-    title: `Le bourreau, Dieu du meurtre`,
-    img: `/DungeonOfAsun/Assets/gods/Sithis.png`,
+    title: `Dieu de la défense et de la protection`,
+    img: `/DungeonOfAsun/Assets/gods/Gorm.png`,
+    desc: `Dieu de la défense et de la protection, Gorm Gulthyn est vénéré pour sa capacité à protéger les nains contre les ennemis extérieurs. Il est souvent invoqué lors de batailles et de conflits, et est considéré comme un dieu puissant et protecteur.`,
   },
   {
     name: `Haela Brightaxe`,
     cults: [7],
-    title: `Le bourreau, Dieu du meurtre`,
-    img: `/DungeonOfAsun/Assets/gods/Sithis.png`,
+    title: `Déesse de la chance et de la bonne fortune`,
+    img: `/DungeonOfAsun/Assets/gods/Haela.png`,
+    desc: `Déesse de la chance et de la bonne fortune, Haela Brightaxe est invoquée pour apporter la chance et la bonne fortune aux nains. Son culte est souvent associé aux jeux de hasard et aux situations où la chance peut faire la différence.`,
   },
 ];

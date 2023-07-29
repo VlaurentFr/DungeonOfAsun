@@ -290,12 +290,9 @@ li {
     .descOrga img {
         display: none;
     }
-    
-}
-@media screen and (max-width: 1024px) {
     .grid-items {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(minmax(66px, 1fr), 1fr);
     }
     .grid-items-container-classes {
         min-width: 0px;

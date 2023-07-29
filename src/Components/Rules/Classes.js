@@ -13,7 +13,7 @@ const Classes = (props) => {
       </div>
       <article className='row selected-item'>
         <div className='flex'>
-          <p className='descOrga'>Pour maitriser et obtenir le bonus lier a une classe, il vous faudra vous entrainer. Chaque entrainement rapporte un certains montant d'expériences et chaque classe nécessite un certains montant en fonction du tiers de cette dernière (Basique, Novice, Avancée ou Maître). Lorsque le montant est atteint vous obtenez alors le bonus de maîtrise lier a cette classe. Bonus permanant même si vous changer de classe dans le fututr. </p>
+          <p className='descOrga'>Pour maitriser et obtenir le bonus lier a une classe, il vous faudra vous entrainer. Chaque entrainement rapporte un certains montant d'expériences et chaque classe nécessite un certains montant en fonction du tiers de cette dernière (Basique, Novice, Avancée ou Maître). Lorsque le montant est atteint vous obtenez alors le bonus de maîtrise lier a cette classe. Bonus permanant même si vous changer de classe dans le futur. </p>
         </div>
         <table>
           <thead>
