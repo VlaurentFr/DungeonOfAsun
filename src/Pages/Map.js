@@ -15,16 +15,11 @@ export const Map = (props) => {
 	}
 	return (
 		<div style={{ height: '100%' }}>
-			<span className='background'></span>
+			<span className='background-3'></span>
 			<section
-				ref={props.refProp4a}
-				className='container'
+				id='map'
 			>
 				<div>
-					<div className='title-page'>
-						<h1>Carte</h1>
-						<h2>Découvrez le monde d'Asun</h2>
-					</div>
 					{/* <ZoomImage image="/DungeonOfAsun/Assets/placeholder-1.png"></ZoomImage> */}
 					<figure className='zoom' style={{backgroundImage: 'url(/DungeonOfAsun/Assets/World.png)'}} onMouseMove={ (event) => zoom(event)}>
  						 <img src='/DungeonOfAsun/Assets/World.png'/>

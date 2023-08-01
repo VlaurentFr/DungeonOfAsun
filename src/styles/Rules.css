@@ -33,50 +33,6 @@
     position: absolute;
     width: 0%;
 }
-
-.title-section {
-    display: flex;
-    border-bottom: solid 1px var(--primaryColor);
-    margin-bottom: 24px;
-    flex-direction: column;
-}
-.title-section span{
-    font-size: 20px;
-    margin: 8px 0 24px 0;
-}
-.title-section h3 {
-    flex: 1;
-    font-family: 'Work Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 31px;
-    line-height: 120%;
-    padding: 0 0 24px 0;
-}
-.title-page {
-    padding-top: 66px;
-}
-.title-section.no-margin h3 {
-    padding : 0 !important;
-}
-.title-page h1 {
-    font-family: 'Caladea';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 61px;
-    line-height: 120%;
-    margin: 0 0 24px 0
-}
-
-.title-page h2 {
-    font-family: 'Work Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 120%;
-    margin: 0 0 64px 0
-}
-
 #back {
     width: fit-content;
     margin-bottom: 16px;
@@ -315,7 +271,7 @@ li {
 }
 .selected-item h4{
     font-weight: bold;
-    margin-bottom: 16px;
+    margin: 16px 0px;
     font-family: 'Work Sans';
 }
 .selected-item ul{

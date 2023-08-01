@@ -108,20 +108,20 @@ const Classes = (props) => {
           <h3>Informations sur la classe</h3>
       </div>
       <article className='row selected-item'>
-      <div className='flex'>
+      {selected?.spell?.length && <div className='flex'>
           <h4>Sorts</h4>
           <ul>
           {selected?.spell?.map((s) => spell.map((sp) => sp?.name === s && <li>{sp?.name}
             <ul>
               {sp?.desc}
-              <li>type: {sp?.type}</li>
-              {sp?.dices.map((d) => <li>{d}</li>)}
-              <li>coûts: {sp?.price} d'énergies</li>
-              <li>portée: {sp?.range}</li>
+              {sp?.type && <li>type: {sp?.type}</li>}
+              {sp?.dices && sp?.dices?.map((d) => <li>{d}</li>)}
+              {sp?.price && <li>coûts: {sp?.price} d'énergies</li>}
+              {sp?.range && <li>portée: {sp?.range}</li>} 
             </ul>
           </li>)) }
           </ul>
-        </div>
+        </div>}
         <div className='flex'>
           <h4>Maîtrises d'armes prérequis</h4>
           <ul>

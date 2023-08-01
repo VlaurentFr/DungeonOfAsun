@@ -17,6 +17,7 @@ const Classes = (props) => {
               <tr>
                 <th colspan="1">Nom</th>
                 <th colspan="1">Type</th>
+                <th colspan="1">Niveau</th>
                 <th colspan="1">Description</th>
                 <th colspan="1">Effet</th>
                 <th colspan="1">Coûts</th>
@@ -27,6 +28,7 @@ const Classes = (props) => {
               {spell.map((s) => <tr>
                 <td>{s.name}</td>
                 <td>{s.type}</td>
+                <td>{s.lvl}</td>
                 <td>{s.desc}</td>
                 <td>{s.dices}</td>
                 <td>{s.price}</td>

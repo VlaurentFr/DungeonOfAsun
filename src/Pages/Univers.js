@@ -5,7 +5,7 @@ import { useLocation, Link } from 'react-router-dom';
 import Timeline from '../Components/Univers/timeline';
 import Story from '../Components/Univers/story';
 import Cults from '../Components/Univers/Cults/Cults';
-import Orga from '../Components/Univers/orga';
+import Magie from '../Components/Univers/magie';
 import Faction from '../Components/Univers/faction';
 import Races from '../Components/Univers/races';
 
@@ -54,17 +54,14 @@ export const Univers = (props) => {
 						</div>
 					</div>
 					<div className='slot'>
-						<Link to='/Univers/orga'>
-							<p className={useLocation().pathname === '/Univers/orga' && 'selected'}>Organisations</p>
-						</Link>
-					</div>
-					<div className='slot'>
 						<Link to='/Univers/races'>
-							<p className={useLocation().pathname === '/Univers/races' && 'selected'}>Races</p>
+							<p className={useLocation().pathname === '/Univers/races' && 'selected'}>Races & Peuples</p>
 						</Link>
 					</div>
 					<div className='slot'>
-						<p>Magie</p>
+						<Link to='/Univers/magie'>
+							<p className={useLocation().pathname === '/Univers/magie' && 'selected'}>Magie</p>
+						</Link>
 					</div>
 				</div>
 			</side>
@@ -116,20 +113,6 @@ export const Univers = (props) => {
 					</div>
 				</section>
 			)}
-			{useLocation().pathname === '/Univers/orga' && (
-				<section
-					ref={props.refProp4a}
-					className='container'
-				>
-					<div>
-						<div className='title-page'>
-							<h1>Organisations</h1>
-							<h2>Découvrez les organisations de l'univers</h2>
-						</div>
-						<Orga></Orga>
-					</div>
-				</section>
-			)}
 			{useLocation().pathname === '/Univers/faction' && (
 				<section
 					ref={props.refProp4a}
@@ -151,10 +134,24 @@ export const Univers = (props) => {
 				>
 					<div>
 						<div className='title-page'>
-							<h1>Factions</h1>
-							<h2>Découvrez les races de l'univers</h2>
+							<h1>Races & Peuples</h1>
+							<h2>Découvrez les races et peuples de l'univers</h2>
 						</div>
 						<Races></Races>
+					</div>
+				</section>
+			)}
+			{useLocation().pathname === '/Univers/magie' && (
+				<section
+					ref={props.refProp4a}
+					className='container'
+				>
+					<div>
+						<div className='title-page'>
+							<h1>Magie</h1>
+							<h2>Découvrez le fonctionnement de la magie d'Asun</h2>
+						</div>
+						<Magie></Magie>
 					</div>
 				</section>
 			)}

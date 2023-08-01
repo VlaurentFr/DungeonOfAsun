@@ -7,6 +7,7 @@ import { Rules } from './Pages/Rules';
 import { Map } from './Pages/Map';
 import { useRef, useState } from 'react';
 import { Button } from './Components/button'
+import { HomePage } from './Pages/HomePage';
 
 // Set up pages using the React Router Link element for navigation - instead of <a></a>
 const App = (props) => {
@@ -67,7 +68,7 @@ const App = (props) => {
     </nav>
     {/* ROUTER */}
     <div style={{height: '100%'}}>
-      <Route path='/Home'>
+      <Route path='/Home' component={HomePage}>
       </Route>
       <Route path='/Univers' component={Univers} >
       </Route>

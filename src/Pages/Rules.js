@@ -8,6 +8,7 @@ import Weapon from '../Components/Rules/Weapon';
 import Classes from '../Components/Rules/Classes';
 import Spell from '../Components/Rules/Spell';
 import Crea from '../Components/Rules/Crea';
+import Archetype from '../Components/Rules/Archetype';
 
 export const Rules = (props) => {
 	return (
@@ -30,6 +31,11 @@ export const Rules = (props) => {
 					<div className='slot'>
 						<Link to='/Rules/class'>
 							<p className={useLocation().pathname === '/Rules/class' && 'selected'}>Classes</p>
+						</Link>
+					</div>
+					<div className='slot'>
+						<Link to='/Rules/archetype'>
+							<p className={useLocation().pathname === '/Rules/archetype' && 'selected'}>Archetypes</p>
 						</Link>
 					</div>
 					<div className='slot'>
@@ -88,6 +94,20 @@ export const Rules = (props) => {
 							<h2>Découvrez les classes jouables</h2>
 						</div>
 						<Classes></Classes>
+					</div>
+				</section>
+			)}
+			{useLocation().pathname === '/Rules/archetype' && (
+				<section
+					ref={props.refProp4a}
+					className='container'
+				>
+					<div>
+						<div className='title-page'>
+							<h1>Archetype</h1>
+							<h2>Découvrez les archetypes de mage jouables</h2>
+						</div>
+						<Archetype></Archetype>
 					</div>
 				</section>
 			)}

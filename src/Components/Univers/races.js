@@ -8,7 +8,7 @@ const Races = (props) => {
     <div>
       <div>
       <div className="title-section">
-          <h3>Les Races</h3>
+          <h3>Les Races & Peuples</h3>
       </div>
     </div>
       <article>
@@ -38,17 +38,18 @@ const Races = (props) => {
             <div className="selected-grid-item flex">
               <img src={ selected?.img }></img>
               <h2>{ selected?.name }</h2>
+              <p>Bonus : <ul>{ selected?.up?.map((r) => <li>{r}</li>) || <li>Aucun</li>}</ul></p>
             </div>
         </div>
       </article>
     </div>
     <div>
       <div className={"title-section no-margin"}>
-          <h3>{selected?.name}</h3>
+          <h3>Les {selected?.name}</h3>
       </div>
       <article className='row selected-item'>
       <div className='flex'>
-        { selected?.desc }
+        <p>{ selected?.desc }</p>
       </div>
       </article>
     </div>

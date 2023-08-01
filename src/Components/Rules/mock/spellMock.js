@@ -1,7 +1,14 @@
 export const spell = [
   {
+    name: "Choix d\'archetype",
+    type: "Passif",
+    lvl: 0,
+    desc: "Permet de choisir son archetype et donc sont sort de niveau 1",
+  },
+  {
     name: "Feu",
     type: "DPS",
+    lvl: 1,
     desc: "lance une boule de feu, peut bruler (33%) ",
     dices: ["2d6 dégâts"],
     price: "3",
@@ -10,6 +17,7 @@ export const spell = [
   {
     name: "Vent",
     type: "DPS",
+    lvl: 1,
     desc: "fait virevoleter l'air pour trancher l'adversaire",
     dices: ["2d6 dégâts"],
     price: "3",
@@ -18,6 +26,7 @@ export const spell = [
   {
     name: "Glacier",
     type: "DPS",
+    lvl: 1,
     desc: "lance une boule de glace, peut geler (33%) ",
     dices: ["2d6 dégâts"],
     price: "3",
@@ -26,6 +35,7 @@ export const spell = [
   {
     name: "Rune Mineur",
     type: "Soutien",
+    lvl: 1,
     desc: "creer un petit cercle runique qui explose dans l'element voulu",
     dices: ["2d6 dégâts"],
     price: "3",
@@ -34,6 +44,7 @@ export const spell = [
   {
     name: "Poison",
     type: "DPS",
+    lvl: 1,
     desc: "Lance une boule de poison, peut empoisonner (33%) ",
     dices: ["2d6 dégâts"],
     price: "3",
@@ -42,6 +53,7 @@ export const spell = [
   {
     name: "Plante",
     type: "Soutien",
+    lvl: 1,
     desc: "faire surgir des plante pour immobiliser la cible pendant 1 tours",
     dices: ["2d6 dégâts"],
     price: "3",
@@ -50,6 +62,7 @@ export const spell = [
   {
     name: "Terre",
     type: "DPS",
+    lvl: 1,
     desc: "lance une bloc de terre, peut etourdir (33%)",
     dices: ["2d6 dégâts"],
     price: "3",
@@ -58,6 +71,7 @@ export const spell = [
   {
     name: "Anticipation",
     type: "Soutien",
+    lvl: 1,
     desc: "Permet de connaitre la prochaine action d'un adversaire",
     dices: [],
     price: "3",
@@ -66,6 +80,7 @@ export const spell = [
   {
     name: "Illusion",
     type: "Soutien",
+    lvl: 1,
     desc: "permet de creer un illusion pouvant egalement causer des degats",
     dices: ["2d6 dégâts"],
     price: "3",
@@ -74,6 +89,7 @@ export const spell = [
   {
     name: "Foudre",
     type: "DPS",
+    lvl: 1,
     desc: "permet de creer un illusion pouvant egalement causer des degats",
     dices: ["2d6 dégâts"],
     price: "3",
@@ -82,6 +98,7 @@ export const spell = [
   {
     name: "Force Bestial",
     type: "Renforcement",
+    lvl: 1,
     desc: "augmente la force de l'utilisateur de 10 pendant 2d6 tour",
     dices: ["2d6 dégâts"],
     price: "3",
@@ -90,6 +107,7 @@ export const spell = [
   {
     name: "Transmutation mineur",
     type: "DPS",
+    lvl: 1,
     desc: "permet de creer un petit sorts",
     dices: ["2d6 dégâts"],
     price: "3",
@@ -98,6 +116,7 @@ export const spell = [
   {
     name: "Soin",
     type: "Soin",
+    lvl: 1,
     desc: "soigne un allier proche",
     dices: ["2d6 PV"],
     price: "3",
@@ -106,6 +125,7 @@ export const spell = [
   {
     name: "Lumière",
     type: "DPS",
+    lvl: 1,
     desc: "lance un rayon de lumière",
     dices: ["2d6 dégâts"],
     price: "3",
@@ -114,6 +134,7 @@ export const spell = [
   {
     name: "Sang",
     type: "DPS",
+    lvl: 1,
     desc: "Lance une attaque de sang solide",
     dices: ["2d6 dégâts"],
     price: "3",
@@ -122,6 +143,7 @@ export const spell = [
   {
     name: "Miasme",
     type: "DPS",
+    lvl: 1,
     desc: "Fait apparaitre des miasmes autour de ladversaire pour l'affaiblir",
     dices: ["2d6 dégâts"],
     price: "3",
@@ -131,6 +153,7 @@ export const spell = [
   {
     name: "Bolganone",
     type: "DPS",
+    lvl: 2,
     desc: "lance une grosse boule de feu",
     dices: ["3d6 dégâts"],
     price: "5",
@@ -139,6 +162,7 @@ export const spell = [
   {
     name: "Luna",
     type: "DPS",
+    lvl: 2,
     desc: "lance une grosse boule de glace",
     dices: ["3d6 dégâts"],
     price: "3",
@@ -147,6 +171,7 @@ export const spell = [
   {
     name: "Vents Tranchants",
     type: "DPS",
+    lvl: 2,
     desc: "fait virevoleter l'air pour trancher l'adversaire",
     dices: ["3d6 dégâts"],
     price: "5",
@@ -155,6 +180,7 @@ export const spell = [
   {
     name: "Rune",
     type: "Soutien",
+    lvl: 2,
     desc: "creer un cercle runique qui explose dans l'element voulu",
     dices: ["3d6 dégâts"],
     price: "5",
@@ -163,6 +189,7 @@ export const spell = [
   {
     name: "Invisibilité",
     type: "Renforcement",
+    lvl: 2,
     desc: "rend invisible pendant 2d6 tours",
     dices: ["3d6 dégâts"],
     price: "5",
@@ -171,6 +198,7 @@ export const spell = [
   {
     name: "Remède",
     type: "Soin",
+    lvl: 2,
     desc: "heal un joueur",
     dices: ["3d6 PV"],
     price: "5",
@@ -179,6 +207,7 @@ export const spell = [
   {
     name: "Nosferatu",
     type: "DPS",
+    lvl: 2,
     desc: "inflige des degat de lumière et heal le lanceur",
     dices: ["2d6 dégâts sur la cible", "1d6 PV sur le lanceur"],
     price: "5",
@@ -187,6 +216,7 @@ export const spell = [
   {
     name: "Récupération",
     type: "Soin",
+    lvl: 2,
     desc: "Heal un joueur",
     dices: ["3d6 PV"],
     price: "5",
@@ -195,6 +225,7 @@ export const spell = [
   {
     name: "Anditote",
     type: "Soin",
+    lvl: 2,
     desc: "soigne des poisons",
     dices: ["3d6 PV"],
     price: "5",
@@ -203,6 +234,7 @@ export const spell = [
   {
     name: "Mort",
     type: "DPS",
+    lvl: 2,
     desc: "invoque un mort vivant ou squelette ",
     dices: ["3d6 dégâts"],
     price: "5",
@@ -211,6 +243,7 @@ export const spell = [
   {
     name: "Sangsue",
     type: "DPS",
+    lvl: 2,
     desc: "inflige des degat de sang et heal le lanceur",
     dices: ["3d6 dégâts"],
     price: "5",
@@ -219,6 +252,7 @@ export const spell = [
   {
     name: "Aveuglement",
     type: "Soutien",
+    lvl: 2,
     desc: "Brule les yeux de la cible, aveugle pendant 2d6 tours",
     dices: ["3d6 dégâts"],
     price: "5",
@@ -227,6 +261,7 @@ export const spell = [
   {
     name: "Thoron",
     type: "DPS",
+    lvl: 2,
     desc: "lance un gros trait de foudre",
     dices: ["3d6 dégâts"],
     price: "5",
@@ -236,6 +271,7 @@ export const spell = [
   {
     name: "Agilité Bestial",
     type: "Renforcement",
+    lvl: 2,
     desc: "augmente l'agilité de l'utilisateur de 10 pendant 2d6 tour",
     dices: ["3d6 dégâts"],
     price: "5",
@@ -244,6 +280,7 @@ export const spell = [
   {
     name: "Transmutation",
     type: "DPS",
+    lvl: 2,
     desc: "permet de creer un sort",
     dices: ["3d6 dégâts"],
     price: "5",
@@ -252,6 +289,7 @@ export const spell = [
   {
     name: "Sagitae",
     type: "DPS",
+    lvl: 2,
     desc: "lance un rayon de lumière",
     dices: ["3d6 dégâts"],
     price: "5",
@@ -260,6 +298,7 @@ export const spell = [
   {
     name: "Pique Noirs",
     type: "DPS",
+    lvl: 2,
     desc: "lance des pique noirs de miasme sur une cible pour la transpercer",
     dices: ["3d6 dégâts"],
     price: "5",
@@ -268,6 +307,7 @@ export const spell = [
   {
     name: "Ragnarok",
     type: "DPS",
+    lvl: 3,
     desc: "fait surgir du feu depuis le sol",
     dices: ["4d6 dégâts"],
     price: "7",
@@ -276,6 +316,7 @@ export const spell = [
   {
     name: "Météore",
     type: "DPS",
+    lvl: 3,
     desc: "lance une enorme boule de feu",
     dices: ["4d6 dégâts"],
     price: "10",
@@ -284,6 +325,7 @@ export const spell = [
   {
     name: "Fimbulvetr",
     type: "DPS",
+    lvl: 3,
     desc: "creer une mini tempete de glace",
     dices: ["4d6 dégâts"],
     price: "10",
@@ -292,6 +334,7 @@ export const spell = [
   {
     name: "Foudroiement",
     type: "DPS",
+    lvl: 3,
     desc: "creer un vague de froid",
     dices: ["4d6 dégâts"],
     price: "7",
@@ -300,6 +343,7 @@ export const spell = [
   {
     name: "Excalibur",
     type: "DPS",
+    lvl: 3,
     desc: "creer une nue de vent tranchant",
     dices: ["4d6 dégâts"],
     price: "3",
@@ -308,6 +352,7 @@ export const spell = [
   {
     name: "Rune Majeur",
     type: "Soutien",
+    lvl: 3,
     desc: "creer un grand cercle runique qui explose dans l'element voulu",
     dices: ["4d6 dégâts"],
     price: "7",
@@ -316,6 +361,7 @@ export const spell = [
   {
     name: "Corrosion",
     type: "DPS",
+    lvl: 3,
     desc: "corrompt la peau de la cible pour lui infliger des degat",
     dices: ["4d6 dégâts"],
     price: "7",
@@ -324,6 +370,7 @@ export const spell = [
   {
     name: "Aura",
     type: "DPS",
+    lvl: 3,
     desc: "soigne les personne proches",
     dices: ["4d6 dégâts"],
     price: "7",
@@ -332,6 +379,7 @@ export const spell = [
   {
     name: "Séisme",
     type: "DPS",
+    lvl: 3,
     desc: "creer un tremblement de terre qui inflige des degats dans une petite zone",
     dices: ["4d6 dégâts"],
     price: "7",
@@ -340,6 +388,7 @@ export const spell = [
   {
     name: "Hades",
     type: "DPS",
+    lvl: 3,
     desc: "lance un rayon de miasme",
     dices: ["4d6 dégâts"],
     price: "7",
@@ -348,6 +397,7 @@ export const spell = [
   {
     name: "Banshee",
     type: "DPS",
+    lvl: 3,
     desc: "lance un rayon de miasme",
     dices: ["4d6 dégâts"],
     price: "7",
@@ -356,6 +406,7 @@ export const spell = [
   {
     name: "Doppelganger",
     type: "Soutien",
+    lvl: 3,
     desc: "creer un double de vous",
     dices: [],
     price: "7",
@@ -364,6 +415,7 @@ export const spell = [
   {
     name: "Silence",
     type: "Soutien",
+    lvl: 3,
     desc: "empeche la cible d'utiliser la magie pendant 2d6 tours",
     dices: [],
     price: "7",
@@ -372,6 +424,7 @@ export const spell = [
   {
     name: "Fulguration",
     type: "DPS",
+    lvl: 3,
     desc: "lance un trait de foudre depuis les cieux",
     dices: ["4d6 dégâts"],
     price: "10",
@@ -380,6 +433,7 @@ export const spell = [
   {
     name: "Transformation Bestial",
     type: "Renforcement",
+    lvl: 3,
     desc: "permet de se transformer en un animal",
     dices: [],
     price: "7",
@@ -388,6 +442,7 @@ export const spell = [
   {
     name: "Transmutation Majeur",
     type: "DPS",
+    lvl: 3,
     desc: "permet de creer un puissant sort",
     dices: ["4d6 dégâts"],
     price: "7",
@@ -396,6 +451,7 @@ export const spell = [
   {
     name: "Fortification",
     type: "Renforcement",
+    lvl: 3,
     desc: "creer un bouclier sur soi de 10 pv (non cmulable)",
     dices: [],
     price: "7",
@@ -404,6 +460,7 @@ export const spell = [
   {
     name: "Abraxas",
     type: "DPS",
+    lvl: 3,
     desc: "lance un rayon de lumière",
     dices: ["4d6 dégâts"],
     price: "7",

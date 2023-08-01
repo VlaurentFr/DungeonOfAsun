@@ -3,7 +3,7 @@
     width: 320px;
     left: 48px;
     top: 116px;
-    background: #303036;
+    background: var(--background);
     box-shadow: 0px 8px 16px rgba(12, 12, 14, 0.4);
     border-radius: 8px;
     display: flex;
@@ -25,7 +25,7 @@
     line-height: 120%;
 }
 .sideNav h3 {
-    color: white;
+    color: var(--textColor);
     overflow: visible;
     padding: 0 24px;
 }
@@ -37,7 +37,7 @@
     font-style: normal;
     font-size: 16px;
     line-height: 22px;
-    color: white;
+    color: var(--textColor);
     padding: 6px;
     margin: 6px;
     transition: all ease-in-out 300ms;
@@ -46,7 +46,7 @@
     text-decoration: none;
 }
 .slot.no-hover p:hover {
-    color: white;
+    color: var(--textColor);
     background-color: transparent;
     cursor: initial;
 }
@@ -63,7 +63,7 @@
     border-radius: 6px;
 }
 .slot .subslot a{
-    color: white;
+    color: var(--textColor);
     text-decoration: none;
 }
 .slot .subslot-container {

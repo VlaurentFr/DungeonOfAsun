@@ -2,7 +2,7 @@ export const basicClasses = [
   {
     name: `Noble`,
     spe: [4, 0, 2, 1],
-    img: `/DungeonOfAsun/Assets/classes/epeiste.webp`,
+    img: `/DungeonOfAsun/Assets/classes/Noble.png`,
     desc: `Peut utiliser la magie`,
     spell: ['Feu'],
     
@@ -12,7 +12,7 @@ export const basicClasses = [
   {
     name: `Roturier`,
     spe: [4, 0, 2, 1],
-    img: `/DungeonOfAsun/Assets/classes/roturier.webp`,
+    img: `/DungeonOfAsun/Assets/classes/roturier.png`,
     desc: `Ne peut pas utiliser la magie`,
     spell: [],
     
@@ -34,15 +34,15 @@ export const noviceClasses = [
   {
     name: `Epéiste`,
     spe: [4, 0, 2, 0],
-    img: `/DungeonOfAsun/Assets/classes/Noble.png`,
+    img: `/DungeonOfAsun/Assets/classes/epeiste.webp`,
     
     weapons: ['Epée C'],
     mastery: ['Gain de 5 pts en social permanent']
   },
   {
-    name: `Guerrier`,
+    name: `Brigand`,
     spe: [3, 0, 3, 0],
-    img: `/DungeonOfAsun/Assets/classes/Warrior.png`,
+    img: `/DungeonOfAsun/Assets/classes/Warrior.webp`,
     
     weapons: ['Hache C'],
     mastery: ['Gain de 5 pts en force permanent']
@@ -66,7 +66,7 @@ export const noviceClasses = [
   {
     name: `Soldat`,
     spe: [3, 0, 4, 0],
-    img: `/DungeonOfAsun/Assets/classes/lancier.webp`,
+    img: `/DungeonOfAsun/Assets/classes/lancier.png`,
     
     weapons: ['Lance C'],
     mastery: ['Gain de 5 pts en social permanent']
@@ -82,72 +82,17 @@ export const noviceClasses = [
   {
     name: `Combattant`,
     spe: [4, 0, 3, 0],
-    img: `/DungeonOfAsun/Assets/classes/combattant.webp`,
+    img: `/DungeonOfAsun/Assets/classes/combattant.png`,
     
     weapons: ['Masse C'],
     mastery: ['Gain de 5 pts en force permanent']
   },
   {
-    name: `Apprenti Pyromancien`,
-    spe: [1, 4, 0, 2],
-    img: `/DungeonOfAsun/Assets/classes/pyromancer.webp`,
-    
-    spell: ['Feu'],
-    weapons: ['Magie D'],
-    mastery: ['Gain de 5 pts en mental permanent']
-  },
-  {
-    name: `Apprenti Cryomancien`,
-    spe: [1, 4, 0, 2],
-    img: `/DungeonOfAsun/Assets/classes/cryomancer.png`,
-    
-    weapons: ['Magie D'],
-    spell: ['Glacier'],
-    mastery: ['Gain de 5 pts en mental permanent']
-  },
-  {
-    name: `Apprenti Zephyr`,
+    name: `Apprenti mage`,
     spe: [1, 4, 0, 2],
     img: `/DungeonOfAsun/Assets/classes/Zephyr.png`,
-    
+    spell: ['Choix d\'archetype'],
     weapons: ['Magie D'],
-    spell: ['Vent'],
-    mastery: ['Gain de 5 pts en mental permanent']
-  },
-  {
-    name: `Apprenti Mage Gris`,
-    spe: [1, 4, 0, 2],
-    img: `/DungeonOfAsun/Assets/classes/grey-mage.png`,
-    
-    weapons: ['Magie D'],
-    spell: ['Poison'],
-    mastery: ['Gain de 5 pts en mental permanent']
-  },
-  {
-    name: `Apprenti Druide`,
-    spe: [1, 4, 0, 2],
-    img: `/DungeonOfAsun/Assets/classes/druid.webp`,
-    
-    weapons: ['Magie C'],
-    spell: ['Plante', 'Terre'],
-    mastery: ['Gain de 5 pts en mental permanent']
-  },
-  {
-    name: `Apprenti Illutionniste`,
-    spe: [1, 2, 0, 4],
-    weapons: ['Magie D'],
-    img: `/DungeonOfAsun/Assets/classes/illutioniste.png`,
-    
-    spell: ['Illusion'],
-    mastery: ['Gain de 5 pts en mental permanent']
-  },
-  {
-    name: `Apprenti Drakomancien`,
-    spe: [1, 4, 0, 2],
-    img: `/DungeonOfAsun/Assets/classes/Drakomancien.png`,
-    
-    weapons: ['Magie D'],
-    spell: ['Foudre'],
     mastery: ['Gain de 5 pts en mental permanent']
   },
   {
@@ -200,95 +145,38 @@ export const avancedClasses = [
     img: `/DungeonOfAsun/Assets/classes/bretteur.webp`,
   },
   {
-    name: `Guerrier d'élite`,
-    img: `/DungeonOfAsun/Assets/classes/Warrior.png`,
+    name: `Guerrier`,
+    img: `/DungeonOfAsun/Assets/classes/Warrior2.png`,
   },
   {
     name: `Archer d'élite`,
-    img: `/DungeonOfAsun/Assets/classes/Archer.png`,
+    img: `/DungeonOfAsun/Assets/classes/Archer2.png`,
   },
   {
-    name: `Spadassin`,
-    img: `/DungeonOfAsun/Assets/classes/spadassin.png`,
-  },{
     name: `Assassin`,
-    img: `/DungeonOfAsun/Assets/classes/thief.png`,
+    img: `/DungeonOfAsun/Assets/classes/thief2.png`,
   },
   {
     name: `Lancier`,
-    img: `/DungeonOfAsun/Assets/classes/lancier.webp`,
+    img: `/DungeonOfAsun/Assets/classes/lancier2.webp`,
   },
   {
     name: `Moine`,
     img: `/DungeonOfAsun/Assets/classes/monk.webp`,
   },
   {
-    name: `Pyromancien`,
-    spe: [1, 4, 0, 2],
+    name: `Mercenaire`,
+    img: `/DungeonOfAsun/Assets/classes/combattant2.png`,
+  },
+  {
+    name: `Mage`,
     img: `/DungeonOfAsun/Assets/classes/pyromancer.webp`,
-    
-    spell: ['Feu'],
-    weapons: ['Magie D'],
-    mastery: ['Gain de 5 pts en mental permanent']
-  },
-  {
-    name: `Cryomancien`,
-    spe: [1, 4, 0, 2],
-    img: `/DungeonOfAsun/Assets/classes/cryomancer.png`,
-    
-    weapons: ['Magie D'],
-    spell: ['Glacier'],
-    mastery: ['Gain de 5 pts en mental permanent']
-  },
-  {
-    name: `Zephyr`,
-    spe: [1, 4, 0, 2],
-    img: `/DungeonOfAsun/Assets/classes/Zephyr.png`,
-    
-    weapons: ['Magie D'],
-    spell: ['Vent'],
-    mastery: ['Gain de 5 pts en mental permanent']
-  },
-  {
-    name: `Mage Gris`,
-    spe: [1, 4, 0, 2],
-    img: `/DungeonOfAsun/Assets/classes/grey-mage.png`,
-    
-    weapons: ['Magie D'],
-    spell: ['Poison'],
-    mastery: ['Gain de 5 pts en mental permanent']
-  },
-  {
-    name: `Druide`,
-    spe: [1, 4, 0, 2],
-    img: `/DungeonOfAsun/Assets/classes/druid.webp`,
-    
-    weapons: ['Magie C'],
-    spell: ['Plante', 'Terre'],
-    mastery: ['Gain de 5 pts en mental permanent']
-  },
-  {
-    name: `Illutionniste`,
-    spe: [1, 2, 0, 4],
-    weapons: ['Magie D'],
-    img: `/DungeonOfAsun/Assets/classes/illutioniste.png`,
-    
-    spell: ['Illusion'],
-    mastery: ['Gain de 5 pts en mental permanent']
-  },
-  {
-    name: `Drakomancien`,
-    spe: [1, 4, 0, 2],
-    img: `/DungeonOfAsun/Assets/classes/Drakomancien.png`,
-    
-    weapons: ['Magie D'],
-    spell: ['Foudre'],
-    mastery: ['Gain de 5 pts en mental permanent']
+    spell: ['Choix d\'archetype'],
   },
   {
     name: `Mage de Sang`,
     spe: [1, 4, 0, 2],
-    img: `/DungeonOfAsun/Assets/classes/necromancer.webp`,
+    img: `/DungeonOfAsun/Assets/classes/spadassin.png`,
     
     weapons: ['Magie D'],
     spell: ['Miasme'],
@@ -324,7 +212,7 @@ export const avancedClasses = [
   {
     name: `Prêtre`,
     spe: [1, 3, 0, 4],
-    img: `/DungeonOfAsun/Assets/classes/Clerc.webp`,
+    img: `/DungeonOfAsun/Assets/classes/Clerc2.png`,
     weapons: ['Magie C'],
     spell: ['Soin', 'Lumière'],
     mastery: ['Gain de 5 pts en mental permanent']
@@ -339,11 +227,7 @@ export const avancedClasses = [
   },
   {
     name: `Chevalier`,
-    img: `/DungeonOfAsun/Assets/classes/Noble.png`,
-  },
-  {
-    name: `Combattant d'élite`,
-    img: `/DungeonOfAsun/Assets/classes/combattant.webp`,
+    img: `/DungeonOfAsun/Assets/classes/epeiste2.png`,
   },
   {
     name: `Aventurier Exp.`,
@@ -353,94 +237,41 @@ export const avancedClasses = [
 export const masterClasses = [
   {
     name: `Maître Epéiste`,
-    img: `/DungeonOfAsun/Assets/classes/bretteur.webp`,
+    img: `/DungeonOfAsun/Assets/classes/samourai.png`,
   },
   {
     name: `Berserker`,
-    img: `/DungeonOfAsun/Assets/classes/Warrior.png`,
+    img: `/DungeonOfAsun/Assets/classes/Warrior3.png`,
   },
   {
     name: `Maître Archer`,
-    img: `/DungeonOfAsun/Assets/classes/Archer.png`,
+    img: `/DungeonOfAsun/Assets/classes/Archer3.webp`,
   },
   {
-    name: `Grand Spadassin`,
-    img: `/DungeonOfAsun/Assets/classes/spadassin.png`,
-  },{
     name: `Maître Assassin`,
-    img: `/DungeonOfAsun/Assets/classes/thief.png`,
+    img: `/DungeonOfAsun/Assets/classes/thief3.png`,
   },
   {
     name: `Grand Lancier`,
-    img: `/DungeonOfAsun/Assets/classes/lancier.webp`,
+    img: `/DungeonOfAsun/Assets/classes/lancier3.webp`,
   },
   {
     name: `Grand Moine`,
     img: `/DungeonOfAsun/Assets/classes/monk.webp`,
   },
   {
-    name: `Maître Pyromancien`,
-    spe: [1, 4, 0, 2],
-    img: `/DungeonOfAsun/Assets/classes/pyromancer.webp`,
-    spell: ['Feu'],
-    weapons: ['Magie D'],
-    mastery: ['Gain de 5 pts en mental permanent']
+    name: `Brise'Os`,
+    img: `/DungeonOfAsun/Assets/classes/combattant3.png`,
   },
   {
-    name: `Maître Cryomancien`,
-    spe: [1, 4, 0, 2],
-    img: `/DungeonOfAsun/Assets/classes/cryomancer.png`,
-    weapons: ['Magie D'],
-    spell: ['Glacier'],
-    mastery: ['Gain de 5 pts en mental permanent']
-  },
-  {
-    name: `Maître Zephyr`,
-    spe: [1, 4, 0, 2],
-    img: `/DungeonOfAsun/Assets/classes/Zephyr.png`,
-    
-    weapons: ['Magie D'],
-    spell: ['Vent'],
-    mastery: ['Gain de 5 pts en mental permanent']
-  },
-  {
-    name: `Maître Mage Gris`,
-    spe: [1, 4, 0, 2],
-    img: `/DungeonOfAsun/Assets/classes/grey-mage.png`,
-    weapons: ['Magie D'],
-    spell: ['Poison'],
-    mastery: ['Gain de 5 pts en mental permanent']
-  },
-  {
-    name: `Grand Druide`,
-    spe: [1, 4, 0, 2],
-    img: `/DungeonOfAsun/Assets/classes/druid.webp`,
-    weapons: ['Magie C'],
-    spell: ['Plante', 'Terre'],
-    mastery: ['Gain de 5 pts en mental permanent']
-  },
-  {
-    name: `Maître Illutionniste`,
-    spe: [1, 2, 0, 4],
-    weapons: ['Magie D'],
-    img: `/DungeonOfAsun/Assets/classes/illutioniste.png`,
-    
-    spell: ['Illusion'],
-    mastery: ['Gain de 5 pts en mental permanent']
-  },
-  {
-    name: `Maître Drakomancien`,
-    spe: [1, 4, 0, 2],
-    img: `/DungeonOfAsun/Assets/classes/Drakomancien.png`,
-    
-    weapons: ['Magie D'],
-    spell: ['Foudre'],
-    mastery: ['Gain de 5 pts en mental permanent']
+    name: `Archimage`,
+    img: `/DungeonOfAsun/Assets/classes/astromancien.png`,
+    spell: ['Choix d\'archetype'],
   },
   {
     name: `Maître de Sang`,
     spe: [1, 4, 0, 2],
-    img: `/DungeonOfAsun/Assets/classes/necromancer.webp`,
+    img: `/DungeonOfAsun/Assets/classes/spadassin.png`,
     
     weapons: ['Magie D'],
     spell: ['Miasme'],
@@ -476,37 +307,33 @@ export const masterClasses = [
   {
     name: `Evêque`,
     spe: [1, 3, 0, 4],
-    img: `/DungeonOfAsun/Assets/classes/Clerc.webp`,
+    img: `/DungeonOfAsun/Assets/classes/Clerc3.png`,
     weapons: ['Magie C'],
     spell: ['Soin', 'Lumière'],
     mastery: ['Gain de 5 pts en mental permanent']
+  },
+  {
+    name: `Grand Croisé`,
+    img: `/DungeonOfAsun/Assets/classes/Croise2.png`,
+  },
+  {
+    name: `Chevalier du Néant`,
+    img: `/DungeonOfAsun/Assets/classes/dark-knight2.png`,
+  },
+  {
+    name: `Grand Chevalier`,
+    img: `/DungeonOfAsun/Assets/classes/epeiste3.png`,
+  },
+  {
+    name: `Grand Aventurier`,
+    img: `/DungeonOfAsun/Assets/classes/Aventurier.webp`,
   },
   {
     name: `Elementaliste`,
     spe: [1, 3, 0, 4],
     img: `/DungeonOfAsun/Assets/classes/enchanter.png`,
     weapons: ['Magie S+'],
-    spell: ['Soin', 'Lumière'],
+    spell: ['Feu', 'Bolganone','Foudre','Thoron','Glacier', 'Luna','Plante', 'Terre',],
     mastery: ['Gain de 5 pts en mental permanent']
-  },
-  {
-    name: `Grand Croisé`,
-    img: `/DungeonOfAsun/Assets/classes/Croise.png`,
-  },
-  {
-    name: `Chevalier du Néant`,
-    img: `/DungeonOfAsun/Assets/classes/dark-knight.png`,
-  },
-  {
-    name: `Grand Chevalier`,
-    img: `/DungeonOfAsun/Assets/classes/Noble.png`,
-  },
-  {
-    name: `Brise'Os`,
-    img: `/DungeonOfAsun/Assets/classes/combattant.webp`,
-  },
-  {
-    name: `Grand Aventurier`,
-    img: `/DungeonOfAsun/Assets/classes/Aventurier.webp`,
   },
 ];
