@@ -1,32 +1,34 @@
-import '../styles/styles.css';
-import '../styles/sideMenu.css';
-import ZoomImage from '../Components/ZoomImage';
+import Map, {Layer} from 'react-map-gl';
+import {FillLayer} from 'react-map-gl';
+import "mapbox-gl/dist/mapbox-gl.css";
 
-export const Map = (props) => {
-	function zoom(e){
-		console.log(e)
-		var zoomer = e.currentTarget;
-		let offsetX, offsetY,x, y
-		e.screenX ? offsetX = e.screenX : offsetX = e.touches[0].pageX
-		e.screenY ? offsetY = e.screenY : offsetX = e.touches[0].pageX
-		x = offsetX/zoomer.offsetWidth*100
-		y = offsetY/zoomer.offsetHeight*100
-		zoomer.style.backgroundPosition = x + '% ' + y + '%';
-	}
-	return (
-		<div style={{ height: '100%' }}>
-			<span className='background-3'></span>
-			<section
-				id='map'
-			>
-				<div>
-					{/* <ZoomImage image="/DungeonOfAsun/Assets/placeholder-1.png"></ZoomImage> */}
-					<figure className='zoom' style={{backgroundImage: 'url(/DungeonOfAsun/Assets/World.png)'}} onMouseMove={ (event) => zoom(event)}>
- 						 <img src='/DungeonOfAsun/Assets/World.png'/>
-					</figure>
-				</div>
-			</section>
-			
-		</div>
-	);
-};
+function MyMap() {
+	const parkLayer = {
+		
+			"id": "water",
+			"source": "mapbox-streets",
+			"source-layer": "water",
+			"type": "fill",
+			"paint": {
+				"fill-color": "red"
+			},
+	};
+  return (
+    <div style={{height: '100%', marginTop: '80px'}} >
+      <Map
+        mapboxAccessToken="pk.eyJ1IjoidmxhdXJlbnQiLCJhIjoiY2xrc3F6Y2dyMDY0MjNnbzQxNmhveHh2aiJ9.u8y3-tN7sZ9UfojD9xHORw"
+        initialViewState={{
+          longitude: -100,
+          latitude: 40,
+          zoom: 3.5,
+					maxZoom: 4,
+  				minZoom: 3
+        }}
+        mapStyle="mapbox://styles/mapbox/streets-v11"
+      >
+				<Layer {...parkLayer} />
+      </Map>
+    </div>
+  );
+}
+export default MyMap;

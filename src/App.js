@@ -4,7 +4,7 @@ import './styles/styles.css'
 import './styles/timeline.css'
 import { Univers } from './Pages/Univers';
 import { Rules } from './Pages/Rules';
-import { Map } from './Pages/Map';
+import Map from './Pages/Map';
 import { useRef, useState } from 'react';
 import { Button } from './Components/button'
 import { HomePage } from './Pages/HomePage';
