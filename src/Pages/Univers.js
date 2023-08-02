@@ -11,7 +11,7 @@ import Races from '../Components/Univers/races';
 
 export const Univers = (props) => {
 	return (
-		<div style={{ height: '100%' }}>
+		<div style={{ height: '92vh' }}>
 			<side className='sideNav'>
 				<div className=' sideMenuHeader'>
 					<h3>Menu</h3>

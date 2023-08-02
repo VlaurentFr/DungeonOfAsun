@@ -12,7 +12,7 @@ import Archetype from '../Components/Rules/Archetype';
 
 export const Rules = (props) => {
 	return (
-		<div style={{ height: '100%' }}>
+		<div style={{ height: '92vh' }}>
 			<side className='sideNav'>
 				<div className=' sideMenuHeader'>
 					<h3>Menu</h3>

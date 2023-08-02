@@ -14,7 +14,7 @@ export const Map = (props) => {
 		zoomer.style.backgroundPosition = x + '% ' + y + '%';
 	}
 	return (
-		<div style={{ height: '100%' }}>
+		<div style={{ height: '100vh' }}>
 			<span className='background-3'></span>
 			<section
 				id='map'
