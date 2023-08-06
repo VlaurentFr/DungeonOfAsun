@@ -1,33 +1,39 @@
-import Map, {Layer} from 'react-map-gl';
-import {FillLayer} from 'react-map-gl';
-import "mapbox-gl/dist/mapbox-gl.css";
+import { MapContainer, ImageOverlay, Marker, Popup} from 'react-leaflet'
+import L from "leaflet";
+import { CRS } from "leaflet";
 
 function MyMap() {
-	const parkLayer = {
-		
-			"id": "water",
-			"source": "mapbox-streets",
-			"source-layer": "water",
-			"type": "fill",
-			"paint": {
-				"fill-color": "red"
-			},
-	};
+	const iconPerson = new L.Icon({
+    iconUrl: require('../Assets/poulpeWhite.png'),
+    iconRetinaUrl: require('../Assets/poulpeWhite.png'),
+    iconAnchor: null,
+    popupAnchor: null,
+    shadowUrl: null,
+    shadowSize: null,
+    shadowAnchor: null,
+    iconSize: new L.Point(60, 75),
+    className: 'leaflet-div-icon'
+});
   return (
-    <div style={{height: '100%', marginTop: '80px'}} >
-      <Map
-        mapboxAccessToken="pk.eyJ1IjoidmxhdXJlbnQiLCJhIjoiY2xrc3F6Y2dyMDY0MjNnbzQxNmhveHh2aiJ9.u8y3-tN7sZ9UfojD9xHORw"
-        initialViewState={{
-          longitude: -100,
-          latitude: 40,
-          zoom: 3.5,
-					maxZoom: 4,
-  				minZoom: 3
-        }}
-        mapStyle="mapbox://styles/mapbox/streets-v11"
-      >
-				<Layer {...parkLayer} />
-      </Map>
+    <div style={{height: '80%', paddingTop: '80px'}} >
+      <MapContainer style={{height: '100%', paddingTop: '80px'}} 
+			center={[50,100]} 
+			zoom={3} 
+			scrollWheelZoom={true}
+			minZoom={0}
+			crs={CRS.Simple}
+			maxBoundsViscosity={1.0}
+			boundsOptions={{ padding: [50, 50] }}>
+				<ImageOverlay
+					bounds={[[0,0], [100,200]]}
+					url="/DungeonOfAsun/Assets/World.png"
+				/>
+				<Marker position={[50, 50]} icon={ iconPerson}>
+					<Popup>
+						A pretty CSS3 popup. <br /> Easily customizable.
+					</Popup>
+				</Marker>
+			</MapContainer>
     </div>
   );
 }
