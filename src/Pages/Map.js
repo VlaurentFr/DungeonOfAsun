@@ -1,32 +1,40 @@
-import '../styles/styles.css';
-import '../styles/sideMenu.css';
-import ZoomImage from '../Components/ZoomImage';
+import { MapContainer, ImageOverlay, Marker, Popup} from 'react-leaflet'
+import L from "leaflet";
+import { CRS } from "leaflet";
 
-export const Map = (props) => {
-	function zoom(e){
-		console.log(e)
-		var zoomer = e.currentTarget;
-		let offsetX, offsetY,x, y
-		e.screenX ? offsetX = e.screenX : offsetX = e.touches[0].pageX
-		e.screenY ? offsetY = e.screenY : offsetX = e.touches[0].pageX
-		x = offsetX/zoomer.offsetWidth*100
-		y = offsetY/zoomer.offsetHeight*100
-		zoomer.style.backgroundPosition = x + '% ' + y + '%';
-	}
-	return (
-		<div style={{ height: '100vh' }}>
-			<span className='background-3'></span>
-			<section
-				id='map'
-			>
-				<div>
-					{/* <ZoomImage image="/DungeonOfAsun/Assets/placeholder-1.png"></ZoomImage> */}
-					<figure className='zoom' style={{backgroundImage: 'url(/DungeonOfAsun/Assets/World.png)'}} onMouseMove={ (event) => zoom(event)}>
- 						 <img src='/DungeonOfAsun/Assets/World.png'/>
-					</figure>
-				</div>
-			</section>
-			
-		</div>
-	);
-};
+function MyMap() {
+	const iconPerson = new L.Icon({
+    iconUrl: require('../Assets/poulpeWhite.png'),
+    iconRetinaUrl: require('../Assets/poulpeWhite.png'),
+    iconAnchor: null,
+    popupAnchor: null,
+    shadowUrl: null,
+    shadowSize: null,
+    shadowAnchor: null,
+    iconSize: new L.Point(60, 75),
+    className: 'leaflet-div-icon'
+});
+  return (
+    <div style={{height: '90vh', paddingTop: '80px'}} >
+      <MapContainer style={{height: '100%', paddingTop: '80px'}} 
+			center={[50,100]} 
+			zoom={3} 
+			scrollWheelZoom={true}
+			minZoom={0}
+			crs={CRS.Simple}
+			maxBoundsViscosity={1.0}
+			boundsOptions={{ padding: [50, 50] }}>
+				<ImageOverlay
+					bounds={[[0,0], [100,200]]}
+					url="/DungeonOfAsun/Assets/World.png"
+				/>
+				<Marker position={[50, 50]} icon={ iconPerson}>
+					<Popup>
+						A pretty CSS3 popup. <br /> Easily customizable.
+					</Popup>
+				</Marker>
+			</MapContainer>
+    </div>
+  );
+}
+export default MyMap;
