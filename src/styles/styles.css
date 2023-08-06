@@ -163,13 +163,13 @@ BUTTON
     text-decoration: none;
     border: none;
     border-radius: 8px;
-    padding: 0 16px; 
     text-shadow: none;
     color: white;
     transition: all ease-in-out 300ms;
 }
 nav .button-primary {
     margin: 0px 20px;
+    padding: 0px 16px;
 }
 .button-primary:hover{
     cursor: pointer;
@@ -318,11 +318,11 @@ p, a {
     background-size: cover;
     flex-direction: column;
     z-index: -1;
-    filter: blur(4px);
 }
 
 .background {
     background-image: var(--bg);
+    filter: blur(3px);
 }
 .background-2 {
     background-image: var(--secondaryBg);
@@ -352,6 +352,32 @@ position: relative;
 overflow: hidden;
 cursor: zoom-in;
 }
+
+#play {
+    margin: auto;
+    width: fit-content;
+    /* background-color: var(--background); */
+    padding: 24px;
+    border-radius: 8px;
+}
+#play h1 {
+    color: white;
+}
+#redirect {
+    margin: 64px auto;
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    flex-wrap: wrap;
+}
+.redirect-card {
+    width: fit-content;
+    background-color: var(--background);
+    padding: 24px;
+    border-radius: 8px;
+}
+
+
 /* ========================
 Nav
 ======================== */

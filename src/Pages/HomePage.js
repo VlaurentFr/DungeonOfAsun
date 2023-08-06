@@ -9,16 +9,28 @@ export const HomePage = (props) => {
 			<div style={{ height: '100%', padding: '48px'}}>
 				<span className='background-2'></span>
 				<section>
-					<div>
-						<div className='title-page'>
-							<h1>Carte</h1>
-							<h2>Découvrez le monde d'Asun</h2>
-							<h1>Carte</h1>
-							<h2>Découvrez le monde d'Asun</h2>
-							<h1>Carte</h1>
-							<h2>Découvrez le monde d'Asun</h2>
-							<h1>Carte</h1>
-							<h2>Découvrez le monde d'Asun</h2>
+					<div className='title-page'>
+						<div id="play">
+							<h1>Commencer</h1>
+							<Button type="primary">
+								<Link  style={{padding: '24px', color: 'white'}} className="scroll" to="/Rules">Préparez-vous à jouer !</Link>
+							</Button>
+						</div>
+						<div id="redirect">
+							<div className='redirect-card'>
+								<h1>Univers</h1>
+								<h2>Découvrez l'univers de Dungeons of Asun</h2>
+								<Button type="primary">
+									<Link  style={{padding: '24px', color: 'white'}} className="scroll" to="/Rules">Découvrir</Link>
+								</Button>
+							</div>
+							<div className='redirect-card'>
+								<h1>Règles du jeu</h1>
+								<h2>Découvrez les règles de Dungeons of Asun</h2>
+								<Button type="primary">
+									<Link  style={{padding: '24px', color: 'white'}} className="scroll" to="/Rules">Découvrir</Link>
+								</Button>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -41,11 +53,11 @@ export const HomePage = (props) => {
 					</div>
 				</section>
 			</div>
-			<div style={{ height: '50%', position: 'relative', padding: '48px', display: 'flex', flexDirection: 'column', }}>
+			<div style={{ height: '500px', position: 'relative', padding: '48px', display: 'flex', flexDirection: 'column', }}>
 				<span className='background-3'></span>
 					<div style={{margin: 'auto', width:'300px' }}>
 						<Button type="primary">
-							<Link  style={{margin: '48px', color: 'white'}} className="scroll" to="/Map">Explorez Asun !</Link>
+							<Link  style={{padding: '48px', color: 'white'}} className="scroll" to="/Map">Explorez Asun !</Link>
 						</Button>
 					</div>
 			</div>

@@ -38,7 +38,7 @@ const Races = (props) => {
             <div className="selected-grid-item flex">
               <img src={ selected?.img }></img>
               <h2>{ selected?.name }</h2>
-              <p>Bonus : <ul>{ selected?.up?.map((r) => <li>{r}</li>) || <li>Aucun</li>}</ul></p>
+              {/* <p>Bonus : <ul>{ selected?.up?.map((r) => <li>{r}</li>) || <li>Aucun</li>}</ul></p> */}
             </div>
         </div>
       </article>

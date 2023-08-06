@@ -22,12 +22,6 @@ const Fight = (props) => {
 							<p>Cette règle modifie celle des points de vie et d'attaque. Lorsqu'un personnage est équipé d'une armure et qu'il reçoit une attaque, il peut soustraire au nombre de points d'attaque de son ennemi ses points d'armure. Cependant dans le cas d'attaque magique cela se base sur la deuxième statistique de l'armure appelé "Résistance". Une Armure peut donc avoir un grand nombre de points mais une faible Résistance et dans ce cas ne pas prémunir d'une bonne protection contre les mages et inversement. Elle peut avoir peu de points mais beaucoup de Résistance protégeant mieux des mages que de n'importe qu'elle autres guerriers sanguinaires qui chercherai a vous faire la peaux. Si une attaque fait 6 de dégâts mais que la cible a trois points d'armure, l'attaque ne fera que 3 points de dégâts (6-3 = 3).</p>
 						</div>
             <div className='title-section'>
-							<h3>Les résistance naturelles</h3>
-						</div>
-						<div className='fight-container'>
-							<p>En fonction de la race d'un personnage (joueur ou non-joueur), il se peux qu'il obtient des bonus de résistances naturelle à certains type de dégât comme le Feu, au poison et bien d'autres. Ces résistances peuvent être plus ou moins dévelloper, par exemple un Elfe aura une grande résistance magique (50%) la ou un Nain à une plus faible mais supérieur à la normale (25%). Lorsqu'un personnages possède une résistance, un jets basé sur cette dernière et effectuer, en cas du réussite il annule les effets En revanche s'il est faible les dégâts sont automatiquement multiplié par 2.</p>
-						</div>
-            <div className='title-section'>
 							<h3>Les points "Strat"</h3>
 						</div>
 						<div className='fight-container'>

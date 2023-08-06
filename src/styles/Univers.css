@@ -94,6 +94,7 @@ article p {
 }
 #selectButton {
     margin: 16px auto;
+    text-align: center;
 }
 #type {
     position: absolute;
@@ -111,6 +112,7 @@ article p {
 }
 #back .button-primary p{
     margin: 6px auto;
+    padding: 0 6px;
 }
 .row.gods {
     column-gap: 80px;
