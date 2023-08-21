@@ -1,19 +1,18 @@
 {
   "files": {
     "main.css": "/DungeonOfAsun/static/css/main.93728370.css",
-    "main.js": "/DungeonOfAsun/static/js/main.edde8ef2.js",
+    "main.js": "/DungeonOfAsun/static/js/main.e4403ac4.js",
     "static/media/World.png": "/DungeonOfAsun/static/media/World.f16071a7c2d032688092.png",
     "static/media/bg3.png": "/DungeonOfAsun/static/media/bg3.cbfb9a3974fcda344888.png",
     "static/media/bg1.png": "/DungeonOfAsun/static/media/bg1.e75da476d5211f493cf7.png",
     "static/media/bg2.png": "/DungeonOfAsun/static/media/bg2.b4912be28198c8302c85.png",
     "static/media/bg.jpeg": "/DungeonOfAsun/static/media/bg.95b65b6fb776e542543f.jpeg",
-    "static/media/poulpeWhite.png": "/DungeonOfAsun/static/media/poulpeWhite.5c28233148c2cb5d6326.png",
     "index.html": "/DungeonOfAsun/index.html",
     "main.93728370.css.map": "/DungeonOfAsun/static/css/main.93728370.css.map",
-    "main.edde8ef2.js.map": "/DungeonOfAsun/static/js/main.edde8ef2.js.map"
+    "main.e4403ac4.js.map": "/DungeonOfAsun/static/js/main.e4403ac4.js.map"
   },
   "entrypoints": [
     "static/css/main.93728370.css",
-    "static/js/main.edde8ef2.js"
+    "static/js/main.e4403ac4.js"
   ]
 }
