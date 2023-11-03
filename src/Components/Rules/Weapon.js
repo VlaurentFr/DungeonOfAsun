@@ -55,7 +55,7 @@ const Weapon = (props) => {
 							<table>
 								<thead>
 									<tr>
-										<th colspan="4">Entraînement de Classe</th>
+										<th colspan="4">Entraînement d'armes</th>
 									</tr>
 								</thead>
 								<tbody>

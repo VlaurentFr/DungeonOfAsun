@@ -109,7 +109,7 @@
     left: 0;
     height: 160px;
     width: 100%;
-    background: linear-gradient(0deg, rgba(22, 22, 22, 0.6), rgba(22, 22, 22, 0.6));
+    background: linear-gradient(0deg, rgba(22, 22, 22, 0.6), rgba(22, 22, 22, 0.1));
 }
 .orga-card .corner {
     width: 48px;
@@ -127,8 +127,10 @@
 .orga-card .corner svg {
     width: 24px;
     height: 24px;
+    color: white;
 }
 .orga-card p {
+    color: white;
     z-index: 2;
     margin: 32px;
     text-align: center;
@@ -179,7 +181,7 @@ li {
 
 .grid-items-container-classes {
     overflow-y: auto;
-    max-height: 694px;
+    max-height: 371px;
     min-width: 320px;
 }
 .grid-items-container-classes h1 {
@@ -189,9 +191,10 @@ li {
     font-size: 20px;
     line-height: 120%;
 }
+
 .grid-items {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 66px);
     grid-template-rows: repeat(auto-fill, 1fr);
     grid-column-gap: 16px;
     grid-row-gap: 16px;
@@ -218,7 +221,9 @@ li {
     display: flex;
     gap: 80px;
 }
-
+.selected-item p{
+    line-height: 120%;
+}
 .selected-grid-item-classes .content {
     text-overflow: ellipsis " [..]";
     overflow: hidden;
@@ -273,6 +278,7 @@ li {
     font-weight: bold;
     margin: 16px 0px;
     font-family: 'Work Sans';
+    font-size: 24px;
 }
 .selected-item ul{
     margin-bottom: 16px;

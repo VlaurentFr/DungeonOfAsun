@@ -25,6 +25,11 @@ export const archetype = [
     img:"/DungeonOfAsun/Assets/classes/druid.webp"
   },
   {
+    name: `Chaman`,
+    img: `/DungeonOfAsun/Assets/classes/chaman.webp`,
+    spell: ['Force Bestial', 'Agilité Bestial', 'Transformation Bestial'],
+  },
+  {
     name: `Illutionniste`,
     spell: ['Illusion','Invisibilité', 'Doppelganger'],
     img:"/DungeonOfAsun/Assets/classes/illutioniste.png"

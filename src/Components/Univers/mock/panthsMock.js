@@ -52,22 +52,40 @@ export const panth= [
   Les Skurfs croient également en la vie après la mort, et la façon dont un individu est honoré dans la mort peut affecter son sort dans l'au-delà. Ils croient en une forme de cycle de la vie et de la mort, où les âmes peuvent être réincarnées ou rejoindre les divinités dans l'après-vie.
   
   Chacune de ces divinité sont associées à des animaux, les Skurfs voue donc à ses derniers un profond respect. On retrouve parmis eux :
+
   Le loup : Le loup est associé à la chasse, à la loyauté et à la force. Les Skurfs admirent la capacité du loup à traquer sa proie et à travailler en meute pour atteindre un objectif commun. Le loup est également considéré comme un animal protecteur et symbolise la force physique.
+
   Le renard : Le renard est souvent associé à la ruse et à l'intelligence. Les Skurfs admirent la capacité du renard à se faufiler dans les endroits les plus étroits et à trouver des solutions ingénieuses aux problèmes. Le renard est également associé à la magie et à l'astuce, et est souvent représenté comme un animal rusé et malin.
+
   La baleine : La baleine est un symbole de force, de sagesse et de longévité. Les Skurfs admirent la capacité de la baleine à naviguer dans les eaux les plus profondes et à fournir de la nourriture et des matériaux de construction. La baleine est également considérée comme un animal sacré, associé à la fertilité et à la fécondité.
+
   L'aigle : L'aigle est associé à la liberté, à la force et à la clarté de vision. Les Skurfs admirent la capacité de l'aigle à voler haut dans le ciel et à repérer sa proie de loin. L'aigle est également associé à la divinité et à la royauté, et est souvent représenté comme un animal noble et majestueux.
+
   Le dragon : Le dragon est associé à la puissance, à la sagesse et à la richesse. Les Skurfs admirent la capacité du dragon à cracher du feu et à protéger ses trésors. Le dragon est également associé à la magie et à la divinité, et est souvent représenté comme un animal terrifiant et majestueux.
+
   Le serpent : Le serpent est souvent associé à la ruse et à la tromperie, mais chez les Skurfs, il est également associé à la guérison et à la régénération. Les Skurfs admirent la capacité du serpent à se régénérer et à renouveler sa peau, et le serpent est souvent considéré comme un animal sacré, associé à la sagesse et à la guérison.
+
+  Les dieux :
+
   Thorgar (Serpent, Theomis): considéré comme le dieu patron des Hommes des Hightlands, Thorgar est un dieu guerrier qui a un lien fort avec la guerre et la victoire. Il est souvent représenté avec une épée ou une hache de guerre.
   Hjarta (Aigle, Quaara) : la déesse de la nature, du vent et des cieux, Hjarta est associée à l'aigle et est vénérée pour sa sagesse et son pouvoir de guérison.
+
   Harald (Serpent, Edis) : le dieu de la mort et du renouveau, Harald est souvent représenté comme un guerrier en armure. Il est également associé à la vie après la mort et est considéré comme le gardien des portes de Valngarde, le paradis des hommes des Hightlands.
+
   Marantha (Loup, Metona): la déesse de l'amour et de la fertilité, Marantha est souvent vénérée pour sa capacité à guérir les relations brisées et à apporter la paix et l'harmonie.
+
   Dibellia (Renard, Qaas): la déesse de la beauté et de l'art, Dibellia est souvent représentée avec une lyre ou un pinceau et est vénérée pour sa capacité à inspirer les artistes et les poètes.
+
   Zenir (Renard, Othar): le dieu du commerce et de l'artisanat, Zenir est souvent vénéré pour sa capacité à apporter la prospérité et la richesse.
+
   Akator (Dragon, Riannedos) : le dieu du temps et du changement, Akator est souvent associé au dragon et est vénéré pour sa capacité à protéger les mortels contre les forces du mal.
+
   Hrothgar (Aigle): également connu sous le nom de l’Aigle du Nord, Hrothgar est un héros légendaire vénéré comme une divinité guerrière et le défenseur des Hightlands.
+
   Sturin (Baleine, Edes): Il est le dieu de l'opposition honorable, de la lutte contre les ennemis et de la résistance face à l'adversité. Sturin est souvent représenté sous la forme d'un guerrier imposant avec une épée à la main.
+
   Tsunar (Loup, Fauchst): Il est le dieu nordique de la mort honorable, de la guerre et de l'épreuve. Tsunar est souvent représenté sous la forme d'un guerrier massif et redoutable, portant une hache ou une massue.
+  
   Hrafn (Baleine, Eone): Il est le dieu nordique de la connaissance et de l'histoire, souvent associé à la magie et à l'apprentissage. Hrafn est représenté sous la forme d'un vieil homme portant des vêtements de mage et tenant un livre ou un parchemin.
   `},
   {name: `Panthéon Orcs`, color:`#C641DC`, img: `/DungeonOfAsun/Assets//cults/orc.png`, 

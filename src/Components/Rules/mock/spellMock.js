@@ -1,9 +1,21 @@
 export const spell = [
   {
-    name: "Choix d\'archetype",
+    name: "Archetype 1",
     type: "Passif",
     lvl: 0,
     desc: "Permet de choisir son archetype et donc sont sort de niveau 1",
+  },
+  {
+    name: "Archetype 2",
+    type: "Passif",
+    lvl: 0,
+    desc: "Sort d'archetype niveau 2",
+  },
+  {
+    name: "Archetype 3",
+    type: "Passif",
+    lvl: 0,
+    desc: "Sort d'archetype niveau 3",
   },
   {
     name: "Feu",
@@ -105,7 +117,7 @@ export const spell = [
     range: "courte",
   },
   {
-    name: "Transmutation mineur",
+    name: "Transmutation Mineur",
     type: "DPS",
     lvl: 1,
     desc: "permet de creer un petit sorts",
@@ -144,7 +156,7 @@ export const spell = [
     name: "Miasme",
     type: "DPS",
     lvl: 1,
-    desc: "Fait apparaitre des miasmes autour de ladversaire pour l'affaiblir",
+    desc: "Fait apparaitre des miasmes autour de l'adversaire pour l'affaiblir",
     dices: ["2d6 dégâts"],
     price: "3",
     range: "courte",
@@ -296,7 +308,7 @@ export const spell = [
     range: "moyenne",
   },
   {
-    name: "Pique Noirs",
+    name: "Piques Noirs",
     type: "DPS",
     lvl: 2,
     desc: "lance des pique noirs de miasme sur une cible pour la transpercer",

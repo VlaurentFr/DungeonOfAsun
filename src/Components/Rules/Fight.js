@@ -7,7 +7,7 @@ const Fight = (props) => {
 							<h3>Les mecaniques de bases</h3>
 						</div>
 						<div className='fight-container'>
-							<p>La mécanique de base est celle du lancé de dé pour réussir sont une actions. L'actions est réussi si la valeur obtenue est inférieur à la statistique exigée. On aura donc soit un jets de physique pour un déplacement complexe ou une attaque avec une arme, soit un jet de mental pour l'usage de la magie. Lorsqu'une attaque est réussi qu'elle soit magique ou physique, un certains nombres de dé sont lancées afin de déterminer les points de vie infligées à la cible dépendant du sort et de l'armes utilisées. Lorsque vous êtes attaqué vous avez 33% de chance de contre attaqué dans la mesure du possible cependant cette action est impossible si l'assaillant est au corps à corps et que vous êtes équipé d'un arc sauf si vous possèdez un certains niveau de maîtrise</p>
+							<p>La mécanique de base est celle du lancé de dé pour réussir sont une actions. L'actions est réussi si la valeur obtenue est inférieur à la statistique exigée. On aura donc soit un jets de force pour un déplacement complexe ou une attaque avec une arme, soit un jet de magie pour l'usage de la magie. Lorsqu'une attaque est réussi qu'elle soit magique ou physique, un certains nombres de dé sont lancées afin de déterminer les points de vie infligées à la cible dépendant du sort et de l'armes utilisées. Lorsque vous êtes attaqué vous avez 33% de chance de contre attaqué dans la mesure du possible cependant cette action est impossible si l'assaillant est au corps à corps et que vous êtes équipé d'un arc sauf si vous possèdez un certains niveau de maîtrise</p>
 						</div>
             <div className='title-section'>
 							<h3>Les points d'énergie</h3>
@@ -39,9 +39,9 @@ const Fight = (props) => {
 						<div className='fight-container'>
 							<p>Les postures sont des possibilités tactiques offertes aux personnages pour mettre l'accent sur une approche des situations au détriment d'autres caractéristiques. La posture peut être changée en début de tour uniquement.</p>
               <p><span>La posture offensive</span> permet à un personnage d'infliger automatiquement le maximum de dégâts possibles, sans avoir à jeter de dé de dégâts. En revanche, toute possibilité de défense est annulée.</p>
-              <p><span>La posture social</span> permet à un personnage de plus facilement convaincre et obtenir des informations ainsi que pour déceler le vraie du faux. Bonus sur jets de social (+10). En revanche, toute possibilité de défense est annulée.</p>
+              <p><span>La posture social</span> permet à un personnage de plus facilement convaincre et obtenir des informations ainsi que pour déceler le vraie du faux. Bonus sur jets de charisme (+10 CHM). En revanche, toute possibilité de défense est annulée.</p>
               <p><span>La posture défensive</span> permet à l'utilisateur de répondre à une attaque réussie par une action de défense, comme une parade ou une esquive, annulant les dégâts. Si vous subisser deux attaque consecutif vous pouver faire la deuxieme  action de défense pas encore réalisé lors de ce tour. L'esquive n'est normalement pas active contre une attaque magique mais, pour ne pas la réduire à une attaque à "dêgats automatique", le joueur en posture défensive peut esquiver les attaques magiques sur une réussite critique.</p>
-              <p><span>La posture focus</span> réduit le nombre de points d'énergie nécessaires pour utiliser l'énergie est réduites de 1 tout les 5 points de magie utilisés et octroie un bonus aux jets de mental (+5). En revanche, toute possibilité de défense est annulée.</p>
+              <p><span>La posture focus</span> réduit le nombre de points d'énergie nécessaires pour utiliser l'énergie est réduites de 1 tout les 5 points de magie utilisés et octroie un bonus aux jets de magie (+5 MAG). En revanche, toute possibilité de défense est annulée.</p>
 						</div>
             <div className='title-section'>
 							<h3>Les avantages et déavantages</h3>

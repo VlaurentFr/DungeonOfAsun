@@ -14,7 +14,7 @@ export const Univers = (props) => {
 		<div style={{ height: '92vh' }}>
 			<side className='sideNav'>
 				<div className=' sideMenuHeader'>
-					<h3>Menu</h3>
+					<h3>Menu de l'univers</h3>
 				</div>
 				<div className=' sideMenuContent'>
 					{/* <div className='slot'>

@@ -67,6 +67,9 @@ article p {
     display: flex;
     gap: 80px;
 }
+.selected-item p{
+    line-height: 120%;
+}
 
 .selected-grid-item .content {
     text-overflow: ellipsis " [..]";
@@ -180,6 +183,7 @@ article p {
 .panth-card .corner svg {
     width: 24px;
     height: 24px;
+    color: white;
 }
 .panth-card p {
     z-index: 2;
@@ -208,12 +212,12 @@ article p {
     }
 }
 
-@media screen and (max-width: 426px){
+@media screen and (max-width: 768px){
     .row.gods {
         flex-direction: column;
     }
-    .grid-items {
-        grid-template-columns: repeat(3,1fr);
+    .row.gods .grid-items {
+        grid-template-columns: repeat(6,1fr);
     }
 }
 

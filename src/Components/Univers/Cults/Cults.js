@@ -58,7 +58,9 @@ const Cults = (props) => {
 				<div className='title-section'>
 					<h3>{selectedCults?.name}</h3>
 				</div>
-				<p>{selectedCults?.desc}</p>
+				<article>
+					<p>{selectedCults?.desc}</p>
+				</article>
 			</div>
 		</div>
 	);

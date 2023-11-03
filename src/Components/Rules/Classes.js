@@ -79,11 +79,11 @@ const Classes = (props) => {
               { masterClasses.map((v) => <img src={ v.img } onClick={() => {setSelected({...v});}}></img>)}
               </div>
             </div>
-            <div className="selected-grid-item-classes flex">
+            <div className="selected-grid-item-classes">
               <img src={ selected?.img }></img>
               <h2>{ selected?.name }</h2>
-              <p className='content'>{ selected?.desc }</p>
-              <p className='content'>DPS Physique</p>
+              {/*<p className='content'>{ selected?.desc }</p>
+               <p className='content'>DPS Physique</p>
               <div class="gauge-border">
                 <div className={`gauge gauge-${selected.spe?.[0]}`}></div>
               </div>
@@ -98,7 +98,7 @@ const Classes = (props) => {
               <p className='content'>Soutiens</p>
               <div class="gauge-border">
                 <div className={`gauge gauge-${selected.spe?.[3]}`}></div>
-              </div>
+              </div> */}
             </div>
         </div>
       </article>
@@ -109,7 +109,7 @@ const Classes = (props) => {
       </div>
       <article className='row selected-item'>
       {selected?.spell?.length && <div className='flex'>
-          <h4>Sorts</h4>
+          <h4>Sorts & Passifs</h4>
           <ul>
           {selected?.spell?.map((s) => spell.map((sp) => sp?.name === s && <li>{sp?.name}
             <ul>
