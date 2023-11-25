@@ -61,13 +61,19 @@ table {
 scrollbar-width: none;  /* Firefox */
 }
 table, td, th, tr {
-    border: var(--textColor) 1px solid;
+    border: black 1px solid;
     padding: 16px;
     margin-bottom: 16px;
     height: fit-content;
 }
-thead {
-    background-color: var(--background);
+thead, th {
+    background-color: var(--background) !important;
+    color: var(--textColor) !important;
+}
+tr:nth-child(odd) {background: lightgray; color: #000;}
+tr:nth-child(even) {
+    background: grey;
+    color: #000;
 }
 p {
     white-space: pre-line;
@@ -368,7 +374,7 @@ p, a {
     margin: 80px 0px 0px 418px;
     padding: 0 80px 80px 0;
     overflow-y: auto;
-    overflow-x: hidden;
+    overflow-x: auto;
     flex: 1;
     height: 80%;
     flex-direction: column;
@@ -395,17 +401,18 @@ p, a {
     flex-direction: column;
     z-index: -1;
 }
+[data-theme="dark"] .background, [data-theme="dark"] .background-3 {
 
+    filter: brightness(0.3);
+}
 .background {
     background-image: var(--bg);
-    filter: brightness(0.3);
 }
 .background-2 {
     background-image: var(--secondaryBg);
 }
 .background-3 {
     background-image: var(--bg3);
-    filter: brightness(0.3);
 }
 .background-map {
     background-image: url('../../public/Assets/World.png');

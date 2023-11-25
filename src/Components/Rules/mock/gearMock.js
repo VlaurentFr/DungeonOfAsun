@@ -2,7 +2,7 @@ export const weapons = [
   {
     name: 'Bâton',
     dmg: '1d6',
-    cost: '2 pa'
+    cost: '2 po'
   },
   {
     name: 'Dague de Fer',

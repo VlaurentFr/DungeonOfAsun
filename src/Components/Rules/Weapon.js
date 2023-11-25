@@ -37,7 +37,7 @@ const Weapon = (props) => {
 									</tr>
 									<tr>
 										<td>Exp. requises</td>
-										<td>0</td>
+										<td></td>
 										<td>3</td>
 										<td>6</td>
 										<td>12</td>
@@ -113,15 +113,15 @@ const Weapon = (props) => {
 									</tr>
 									<tr>
 										<td>E+</td>
-										<td>+5 d'ESQ</td>
-										<td>+5 d'ESQ</td>
-										<td>+5 d'ESQ</td>
-										<td>+5 d'ESQ</td>
-										<td>+5 d'ESQ</td>
-										<td>+5 d'ESQ</td>
-										<td>+5 d'ESQ</td>
+										<td>+5 CHA</td>
+										<td>+5 CHA</td>
+										<td>+5 CHA</td>
+										<td>+5 CHA</td>
+										<td>+5 CHA</td>
+										<td>+5 CHA</td>
+										<td>+5 CHA</td>
 										<td></td>
-										<td>+5 d'ESQ</td>
+										<td></td>
 									</tr>
 									<tr>
 										<td>D</td>
@@ -152,7 +152,7 @@ const Weapon = (props) => {
 										<td></td>
 										<td></td>
 										<td></td>
-										<td>CTR CàC</td>
+										<td></td>
 										<td></td>
 										<td></td>
 										<td></td>
@@ -161,15 +161,15 @@ const Weapon = (props) => {
 									</tr>
 									<tr>
 										<td>C+</td>
-										<td>+5 d'ESQ</td>
-										<td>+5 d'ESQ</td>
-										<td>+5 d'ESQ</td>
-										<td>+5 d'ESQ</td>
-										<td>+5 d'ESQ</td>
-										<td>+5 d'ESQ</td>
-										<td>+5 d'ESQ</td>
+										<td>+5 CHA</td>
+										<td>+5 CHA</td>
+										<td>+5 CHA</td>
+										<td>+5 CHA</td>
+										<td>+5 CHA</td>
+										<td>+5 CHA</td>
+										<td>+5 CHA</td>
 										<td></td>
-										<td>+5 d'ESQ</td>
+										<td></td>
 									</tr>
 									<tr>
 										<td>B</td>
@@ -204,20 +204,20 @@ const Weapon = (props) => {
 										<td></td>
 										<td></td>
 										<td></td>
-										<td></td>
+										<td>+5 PRD</td>
 										<td></td>
 									</tr>
 									<tr>
 										<td>A+</td>
-										<td>+5 d'ESQ</td>
-										<td>+5 d'ESQ</td>
-										<td>+5 d'ESQ</td>
-										<td>+5 d'ESQ</td>
-										<td>+5 d'ESQ</td>
-										<td>+5 d'ESQ</td>
-										<td>+5 d'ESQ</td>
-										<td>+10 PRD</td>
-										<td>+5 d'ESQ</td>
+										<td>+5 CHA</td>
+										<td>+5 CHA</td>
+										<td>+5 CHA</td>
+										<td>+5 CHA</td>
+										<td>+5 CHA</td>
+										<td>+5 CHA</td>
+										<td>+5 CHA</td>
+										<td></td>
+										<td></td>
 									</tr>
 									<tr>
 										<td>S</td>

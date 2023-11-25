@@ -7,7 +7,7 @@ export const basicClasses = [
     spell: ['Feu'],
     
     weapons: ['Aucune'],
-    mastery: ['Gain de 5 pts en pv permanent']
+    mastery: ['Gain de 1 pts en pv permanent']
   },
   {
     name: `Roturier`,
@@ -15,7 +15,7 @@ export const basicClasses = [
     img: `/DungeonOfAsun/Assets/classes/roturier.png`,
     desc: `Ne peut pas utiliser la magie`,
     weapons: ['Aucune'],
-    mastery: ['Gain de 5 pts en pv permanent']
+    mastery: ['Gain de 1 pts en pv permanent']
   },
 ];
 export const noviceClasses = [
@@ -25,7 +25,7 @@ export const noviceClasses = [
     img: `/DungeonOfAsun/Assets/classes/epeiste.webp`,
     
     weapons: ['Epée C'],
-    mastery: ['Gain de 5 pts en social permanent']
+    mastery: ['Gain de 2 pts en pv permanent']
   },
   {
     name: `Brigand`,
@@ -33,7 +33,7 @@ export const noviceClasses = [
     img: `/DungeonOfAsun/Assets/classes/Warrior.webp`,
     
     weapons: ['Hache C'],
-    mastery: ['Gain de 5 pts en force permanent']
+    mastery: ['Gain de 2 pts en pv permanent']
   },
   {
     name: `Archer`,
@@ -41,7 +41,7 @@ export const noviceClasses = [
     img: `/DungeonOfAsun/Assets/classes/Archer.png`,
     
     weapons: ['Arc C'],
-    mastery: ['Gain de 5 pts en social permanent']
+    mastery: ['Gain de 2 pts en pv permanent']
   },
   {
     name: `Voleur`,
@@ -49,7 +49,7 @@ export const noviceClasses = [
     img: `/DungeonOfAsun/Assets/classes/thief.png`,
     
     weapons: ['Dague C'],
-    mastery: ['Gain de 5 pts en force permanent']
+    mastery: ['Gain de 2 pts en pv permanent']
   },
   {
     name: `Soldat`,
@@ -57,7 +57,7 @@ export const noviceClasses = [
     img: `/DungeonOfAsun/Assets/classes/lancier.png`,
     
     weapons: ['Lance C'],
-    mastery: ['Gain de 5 pts en social permanent']
+    mastery: ['Gain de 2 pts en pv permanent']
   },
   {
     name: `Pugiliste`,
@@ -65,7 +65,7 @@ export const noviceClasses = [
     img: `/DungeonOfAsun/Assets/classes/monk.webp`,
     
     weapons: ['Poing C'],
-    mastery: ['Gain de 5 pts en force permanent']
+    mastery: ['Gain de 2 pts en pv permanent']
   },
   {
     name: `Combattant`,
@@ -73,7 +73,7 @@ export const noviceClasses = [
     img: `/DungeonOfAsun/Assets/classes/combattant.png`,
     
     weapons: ['Masse C'],
-    mastery: ['Gain de 5 pts en force permanent']
+    mastery: ['Gain de 2 pts en pv permanent']
   },
   {
     name: `Apprenti mage`,
@@ -81,7 +81,7 @@ export const noviceClasses = [
     img: `/DungeonOfAsun/Assets/classes/Zephyr.png`,
     spell: ['Archetype 1'],
     weapons: ['Magie D'],
-    mastery: ['Gain de 5 pts en mental permanent']
+    mastery: ['Gain de 2 pts en energie permanent']
   },
   {
     name: `Mage Noir`,
@@ -90,7 +90,7 @@ export const noviceClasses = [
     
     weapons: ['Magie D'],
     spell: ['Miasme'],
-    mastery: ['Gain de 5 pts en mental permanent']
+    mastery: ['Gain de 2 pts en energie permanent']
   },
   {
     name: `Apprenti Alchimiste`,
@@ -99,7 +99,7 @@ export const noviceClasses = [
     
     weapons: ['Magie D'],
     spell: ['Transmutation Mineur'],
-    mastery: ['Gain de 5 pts en mental permanent']
+    mastery: ['Gain de 2 pts en energie permanent']
   },
   {
     name: `Clerc`,
@@ -107,7 +107,7 @@ export const noviceClasses = [
     img: `/DungeonOfAsun/Assets/classes/Clerc.webp`,
     weapons: ['Magie C'],
     spell: ['Soin', 'Lumière'],
-    mastery: ['Gain de 5 pts en mental permanent']
+    mastery: ['Gain de 2 pts en energie permanent']
   },
 ]
 export const avancedClasses = [
@@ -115,49 +115,49 @@ export const avancedClasses = [
     name: `Bretteur`,
     img: `/DungeonOfAsun/Assets/classes/epeiste2.png`,
     weapons: ['Epee A'],
-    mastery: ['+ 10 de Réussite a l\'épée']
+    mastery: ['+ 3 PV']
   },
   {
     name: `Guerrier`,
     img: `/DungeonOfAsun/Assets/classes/Warrior2.png`,
     weapons: ['Hache A'],
-    mastery: ['+ 10 de Réussite a la hache']
+    mastery: ['+ 3 PV']
   },
   {
     name: `Archer d'élite`,
     img: `/DungeonOfAsun/Assets/classes/Archer2.png`,
     weapons: ['Arc A'],
-    mastery: ['+ 10 de Réussite a l\'arc']
+    mastery: ['+ 3 PV']
   },
   {
     name: `Assassin`,
     img: `/DungeonOfAsun/Assets/classes/thief2.png`,
     weapons: ['Dague A'],
-    mastery: ['+ 10 de Réussite a la dague']
+    mastery: ['+ 3 PV']
   },
   {
     name: `Lancier`,
     img: `/DungeonOfAsun/Assets/classes/lancier2.webp`,
     weapons: ['Lance A'],
-    mastery: ['+ 10 de Réussite a la lance']
+    mastery: ['+ 3 PV']
   },
   {
     name: `Moine`,
     img: `/DungeonOfAsun/Assets/classes/monk.webp`,
     weapons: ['Poing A'],
-    mastery: ['+ 10 de Réussite aux poings']
+    mastery: ['+ 3 PV']
   },
   {
     name: `Mercenaire`,
     img: `/DungeonOfAsun/Assets/classes/combattant2.png`,
     weapons: ['Masse A'],
-    mastery: ['+ 10 de Réussite a la masse']
+    mastery: ['+ 3 PV']
   },
   {
     name: `Mage`,
     img: `/DungeonOfAsun/Assets/classes/pyromancer.webp`,
     spell: ['Archetype 1', 'Archetype 2'],
-    mastery: ['+ 10 de Réussite a la magie']
+    mastery: ['+ 3 Énergie']
   },
   {
     name: `Mage de Sang`,
@@ -166,7 +166,7 @@ export const avancedClasses = [
     
     weapons: ['Magie A'],
     spell: ['Sang', 'Sangsue'],
-    mastery: ['+ 10 de Réussite a la magie']
+    mastery: ['+ 3 Énergie']
   },
   {
     name: `Necromancien`,
@@ -175,7 +175,7 @@ export const avancedClasses = [
     
     weapons: ['Magie A'],
     spell: ['Miasme', 'Mort'],
-    mastery: ['+ 10 de Réussite a la magie']
+    mastery: ['+ 3 Énergie']
   },
   {
     name: `Alchimiste`,
@@ -184,7 +184,7 @@ export const avancedClasses = [
     
     weapons: ['Magie A'],
     spell: ['Transmutation Mineur', 'Transmutation'],
-    mastery: ['+ 10 de Réussite a la magie']
+    mastery: ['+ 3 Énergie']
   },
   {
     name: `Prêtre`,
@@ -192,21 +192,21 @@ export const avancedClasses = [
     img: `/DungeonOfAsun/Assets/classes/Clerc2.png`,
     weapons: ['Magie A'],
     spell: ['Soin', 'Lumière','Nosferatu','Remède'],
-    mastery: ['+ 10 de Réussite a la magie']
+    mastery: ['+ 3 Énergie']
   },
   {
     name: `Croisé`,
     img: `/DungeonOfAsun/Assets/classes/Croise.png`,
     weapons: ['1 Rang B, Magie C'],
     spell: ['Soin', 'Lumière','Sagitae','Remède'],
-    mastery: ['+ 5 Force']
+    mastery: ['+ 2 PV + 1 Énergie']
   },
   {
     name: `Chevalier Noir`,
     img: `/DungeonOfAsun/Assets/classes/dark-knight.png`,
     weapons: ['1 Rang B, Magie C'],
     spell: ['Miasme', 'Piques Noirs'],
-    mastery: ['+ 5 Force']
+    mastery: ['+ 1 PV + 2 Énergie']
   },
 ];
 export const masterClasses = [
@@ -214,50 +214,50 @@ export const masterClasses = [
     name: `Maître Epéiste`,
     img: `/DungeonOfAsun/Assets/classes/epeiste3.png`,
     weapons: ['Epee S'],
-    mastery: ['+ 10 de Critique a l\'épée']
+    mastery: ['+ 4 PV']
   },
   {
     name: `Berserker`,
     img: `/DungeonOfAsun/Assets/classes/Warrior3.png`,
     weapons: ['Hache S'],
-    mastery: ['+ 10 de Critique a la hache']
+    mastery: ['+ 4 PV']
   },
   {
     name: `Maître Archer`,
     img: `/DungeonOfAsun/Assets/classes/Archer3.webp`,
     weapons: ['Arc S'],
-    mastery: ['+ 10 de Critique a l\'arc']
+    mastery: ['+ 4 PV']
   },
   {
     name: `Maître Assassin`,
     img: `/DungeonOfAsun/Assets/classes/thief3.png`,
     weapons: ['Dague S'],
-    mastery: ['+ 10 de Critique a la dague']
+    mastery: ['+ 4 PV']
   },
   {
     name: `Grand Lancier`,
     img: `/DungeonOfAsun/Assets/classes/lancier3.webp`,
     weapons: ['Lance S'],
-    mastery: ['+ 10 de Critique a la lance']
+    mastery: ['+ 4 PV']
   },
   {
     name: `Grand Moine`,
     img: `/DungeonOfAsun/Assets/classes/monk.webp`,
     weapons: ['Poing S'],
-    mastery: ['+ 10 de Critique aux poings']
+    mastery: ['+ 4 PV']
   },
   {
     name: `Brise'Os`,
     img: `/DungeonOfAsun/Assets/classes/combattant3.png`,
     weapons: ['Masse S'],
-    mastery: ['+ 10 de Critique a la masse']
+    mastery: ['+ 4 PV']
   },
   {
     name: `Archimage`,
     img: `/DungeonOfAsun/Assets/classes/astromancien.png`,
     spell: ['Archetype 1', 'Archetype 2', 'Archetype 3'],
     weapons: ['Magie S'],
-    mastery: ['+ 10 de Critique en magie']
+    mastery: ['+ 4 Énergie']
   },
   {
     name: `Maître de Sang`,
@@ -266,7 +266,7 @@ export const masterClasses = [
     
     weapons: ['Magie S'],
     spell: ['Sang', 'Sangsue', 'Hades'],
-    mastery: ['+ 10 de Critique en magie']
+    mastery: ['+ 4 Énergie']
   },
   {
     name: `Maître Necromancien`,
@@ -275,7 +275,7 @@ export const masterClasses = [
     
     weapons: ['Magie S'],
     spell: ['Miasme', 'Mort', 'Banshee'],
-    mastery: ['+ 10 de Critique en magie']
+    mastery: ['+ 4 Énergie']
   },
   {
     name: `Maître Alchimiste`,
@@ -284,7 +284,7 @@ export const masterClasses = [
     
     weapons: ['Magie S'],
     spell: ['Transmutation Mineur', 'Transmutation', 'Transmutation Majeur'],
-    mastery: ['+ 10 de Critique en magie']
+    mastery: ['+ 4 Énergie']
   },
   {
     name: `Evêque`,
@@ -292,20 +292,20 @@ export const masterClasses = [
     img: `/DungeonOfAsun/Assets/classes/Clerc3.png`,
     weapons: ['Magie S'],
     spell: ['Soin', 'Lumière','Nosferatu','Remède','Aura','Sagitae','Abraxas'],
-    mastery: ['+ 10 de Critique en magie']
+    mastery: ['+ 4 Énergie']
   },
   {
     name: `Grand Croisé`,
     img: `/DungeonOfAsun/Assets/classes/Croise2.png`,
     weapons: ['1 Rang A+, Magie A'],
     spell: ['Soin', 'Lumière','Sagitae','Remède', 'Fortification', 'Abraxas'],
-    mastery: ['+ 5 PV']
+    mastery: ['+ 2 PV + 2 Énergie']
   },
   {
     name: `Chevalier du Néant`,
     img: `/DungeonOfAsun/Assets/classes/dark-knight2.png`,
     weapons: ['1 Rang A+, Magie A'],
-    mastery: ['+ 10 de Critique en magie'],
+    mastery: ['+ 2 PV + 2 Énergie'],
     spell: ['Miasme', 'Piques Noirs', 'Hades'],
   },
 ];

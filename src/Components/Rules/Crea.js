@@ -15,7 +15,7 @@ const Crea = (props) => {
 						</div>
 						<div className='fight-container'>
 							<p>
-								Commencez par choisir la race de votre personnage parmi nos options variées, chacune ayant ses propres attributs et avantages. Que vous préfériez être un elfe élégant, un nain robuste, un humain polyvalent ou une race unique de notre monde.
+								Commencez par choisir la race de votre personnage parmi nos options variées, chacune ayant ses propres avantages et déavantages lier au lore de cette dernière (Sans influence statistique directe). Que vous préfériez être un elfe élégant, un nain robuste, un humain polyvalent ou une race unique de notre monde.
 							</p>
 						</div>
 								
@@ -26,7 +26,7 @@ const Crea = (props) => {
 						</div>
 						<div className='fight-container'>
 							<p>
-								Une fois votre race choisie, sélectionnez une classe qui déterminera le style de jeu de votre personnage. Voulez-vous être un puissant guerrier, un sorcier habile, un voleur rusé ou une classe plus unique ? Votre classe dictera vos compétences de base et votre rôle dans le groupe.
+								Une fois votre race choisie, sélectionnez une classe qui déterminera le style de jeu de votre personnage. Voulez-vous être un puissant guerrier, un sorcier habile, un voleur rusé ou une classe plus unique ? Votre classe dictera vos compétences de base et votre rôle dans le groupe. Pour commencer vous aurez le choix entre <span>Noble</span>, qui peut utiliser la magie et <span>Roturier</span> qui ne peux pas sans s'entrainer au préalable. Après un rude entrainement si vous atteignez les maîtrises nécessaire pour une classe plus avancée vous pourrez changer à tout moment pour cette dernière.
 							</p>
 						</div>
 						<div className='title-section'>
@@ -46,7 +46,7 @@ const Crea = (props) => {
 						</div>
 						<div className='fight-container'>
 							<p>
-								Vous pouvez maintenant répartir vos points d'attribut pour déterminer les forces et les faiblesses de votre personnage. Choisissez judicieusement, car cela influencera vos compétences et capacités. Les guerriers auront besoin de force, les mages de la magie, et ainsi de suite. Vous possèdez 170 points à répartir !
+								Vous pouvez maintenant répartir vos points d'attribut pour déterminer les forces et les faiblesses de votre personnage. Choisissez judicieusement, car cela influencera vos compétences et capacités. Les guerriers auront besoin de force, les mages de la magie, et ainsi de suite. Vous possèdez 220 points à répartir entre la Force (FRC), la Magie (MAG), la Chance (CHA) et le Charisme (CHM) avec au maximum 70 et minimum 30 dans chaque caractéristiques. Ainsi que 30 points pour les points de vie et d'énergie (PV et PdE).
 							</p>
 						</div>
 						<div className='title-section'>
@@ -71,7 +71,17 @@ const Crea = (props) => {
 						</div>
 						<div className='title-section'>
 							<h3>
-								Étape 7 : Finalisation
+								Étape 6 : Achetez votre équipement
+							</h3>
+						</div>
+						<div className='fight-container'>
+							<p>
+								Achetez votre équipement, vous possèdez pour cela de 60 po de départ à consommer pour vous équiper de la tête aux pieds.
+							</p>
+						</div>
+						<div className='title-section'>
+							<h3>
+								Étape 8 : Finalisation
 							</h3>
 						</div>
 						<div className='fight-container'>
