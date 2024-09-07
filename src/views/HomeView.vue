@@ -174,6 +174,7 @@ import TheWelcome from '../components/TheWelcome.vue'
           techniques et rapides sont basées sur la dextérité du personnage.
         </p>
       </section>
+      test
     </div>
   </main>
 </template>
